@@ -1,0 +1,45 @@
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache
+E:\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
+E:\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
+E:\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.exe
+E:\DuckPaint\DuckPaint\obj\Debug\DuckPaint.pdb
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.exe
+C:\Users\PC\Downloads\DuckPaint-master\DuckPaint\DuckPaint\obj\Debug\DuckPaint.pdb
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.exe
+C:\Users\User\Documents\2ВАЖНОЕ\C#\Новая папка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.pdb
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.exe
+C:\Users\PC\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.pdb
+C:\Users\User\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
+C:\Users\User\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
+C:\Users\User\Desktop\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.exe
+C:\Users\User\Desktop\DuckPaint\DuckPaint\obj\Debug\DuckPaint.pdb
