@@ -225,6 +225,22 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
         }
 
+        private void rTriangle_Click(object sender, EventArgs e)
+        {
+            figureFactory = new RightTriangleFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseMove";
+            flagRewrieStartPoint = false;
+        }
+
+        private void eTriangle_Click(object sender, EventArgs e)
+        {
+            figureFactory = new EquilateralTriangleFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseMove";
+            flagRewrieStartPoint = false;
+        }
+
         private void Line_Click(object sender, EventArgs e)
         {
             figureFactory = new LineFactory();

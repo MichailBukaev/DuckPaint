@@ -43,6 +43,8 @@
             this.button_Fill = new System.Windows.Forms.Button();
             this.OnlyBordres = new System.Windows.Forms.Button();
             this.FillAndBorders = new System.Windows.Forms.Button();
+            this.rTriangle = new System.Windows.Forms.Button();
+            this.eTriangle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             this.SuspendLayout();
@@ -200,11 +202,33 @@
             this.FillAndBorders.UseVisualStyleBackColor = true;
             this.FillAndBorders.Click += new System.EventHandler(this.FillAndBorders_Click);
             // 
+            // rTriangle
+            // 
+            this.rTriangle.Location = new System.Drawing.Point(460, 7);
+            this.rTriangle.Name = "rTriangle";
+            this.rTriangle.Size = new System.Drawing.Size(75, 23);
+            this.rTriangle.TabIndex = 24;
+            this.rTriangle.Text = "rTriangle";
+            this.rTriangle.UseVisualStyleBackColor = true;
+            this.rTriangle.Click += new System.EventHandler(this.rTriangle_Click);
+            // 
+            // eTriangle
+            // 
+            this.eTriangle.Location = new System.Drawing.Point(460, 36);
+            this.eTriangle.Name = "eTriangle";
+            this.eTriangle.Size = new System.Drawing.Size(75, 23);
+            this.eTriangle.TabIndex = 25;
+            this.eTriangle.Text = "eTriangle";
+            this.eTriangle.UseVisualStyleBackColor = true;
+            this.eTriangle.Click += new System.EventHandler(this.eTriangle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.eTriangle);
+            this.Controls.Add(this.rTriangle);
             this.Controls.Add(this.FillAndBorders);
             this.Controls.Add(this.OnlyBordres);
             this.Controls.Add(this.button_Fill);
@@ -247,6 +271,8 @@
         private System.Windows.Forms.Button button_Fill;
         private System.Windows.Forms.Button OnlyBordres;
         private System.Windows.Forms.Button FillAndBorders;
+        private System.Windows.Forms.Button rTriangle;
+        private System.Windows.Forms.Button eTriangle;
     }
 }
 

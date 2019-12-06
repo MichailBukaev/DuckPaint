@@ -47,9 +47,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BordersEllipse.cs" />
+    <Compile Include="BordersEquilateralTriangle.cs" />
     <Compile Include="BordersFigures.cs" />
     <Compile Include="BordersLine.cs" />
     <Compile Include="Brash.cs" />
+    <Compile Include="BordersRightTriangle.cs" />
+    <Compile Include="EquilateralTriangle.cs" />
+    <Compile Include="EquilateralTriangleFactory.cs" />
+    <Compile Include="RightTriangleFactory.cs" />
+    <Compile Include="RightTriangle.cs" />
     <Compile Include="NonFill.cs" />
     <Compile Include="Ellipse.cs" />
     <Compile Include="EllipseFactory.cs" />
