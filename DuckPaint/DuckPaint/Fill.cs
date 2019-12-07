@@ -32,7 +32,7 @@ namespace DuckPaint
         {
 
             int x_start = x, x_end = x;
-
+            
             Color curColor = bitmap.GetPixel(x, y);
             while (x_start - 1 >= 0 && curColor == bitmap.GetPixel(x_start - 1, y))
             {
@@ -65,6 +65,7 @@ namespace DuckPaint
 
         public void Filling(int x, int y, Bitmap bitmap)
         {
+
             this.bitmap = bitmap;
             HelpFilling(x, y);
         }

@@ -204,9 +204,9 @@
             // 
             // rTriangle
             // 
-            this.rTriangle.Location = new System.Drawing.Point(460, 7);
+            this.rTriangle.Location = new System.Drawing.Point(446, 5);
             this.rTriangle.Name = "rTriangle";
-            this.rTriangle.Size = new System.Drawing.Size(75, 23);
+            this.rTriangle.Size = new System.Drawing.Size(75, 26);
             this.rTriangle.TabIndex = 24;
             this.rTriangle.Text = "rTriangle";
             this.rTriangle.UseVisualStyleBackColor = true;
@@ -214,9 +214,9 @@
             // 
             // eTriangle
             // 
-            this.eTriangle.Location = new System.Drawing.Point(460, 36);
+            this.eTriangle.Location = new System.Drawing.Point(446, 34);
             this.eTriangle.Name = "eTriangle";
-            this.eTriangle.Size = new System.Drawing.Size(75, 23);
+            this.eTriangle.Size = new System.Drawing.Size(75, 27);
             this.eTriangle.TabIndex = 25;
             this.eTriangle.Text = "eTriangle";
             this.eTriangle.UseVisualStyleBackColor = true;

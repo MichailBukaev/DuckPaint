@@ -75,13 +75,13 @@ namespace DuckPaint
 
                 for (int j = 0; j < currentY_x; j++)
                 {
-                    if (x + currentX < bitMap.Width && y + j < bitMap.Height && x + currentX > 0 && y + j > 0)
+                    if (x + currentX < bitMap.Width && y + j < bitMap.Height && x + currentX >= 0 && y + j >= 0)
                         bitMap.SetPixel(x + currentX, y + j, color);
-                    if (x - currentX < bitMap.Width && y + j < bitMap.Height && x - currentX > 0 && y + j > 0)
+                    if (x - currentX < bitMap.Width && y + j < bitMap.Height && x - currentX >= 0 && y + j >= 0)
                         bitMap.SetPixel(x - currentX, y + j, color);
-                    if (x - currentX < bitMap.Width && y - j < bitMap.Height && x - currentX > 0 && y - j > 0)
+                    if (x - currentX < bitMap.Width && y - j < bitMap.Height && x - currentX >= 0 && y - j >= 0)
                         bitMap.SetPixel(x - currentX, y - j, color);
-                    if (x + currentX < bitMap.Width && y - j < bitMap.Height && x + currentX > 0 && y - j > 0)
+                    if (x + currentX < bitMap.Width && y - j < bitMap.Height && x + currentX >= 0 && y - j >= 0)
                         bitMap.SetPixel(x + currentX, y - j, color);
                 }
             }
