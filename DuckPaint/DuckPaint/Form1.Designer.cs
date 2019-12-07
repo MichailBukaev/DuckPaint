@@ -45,12 +45,14 @@
             this.FillAndBorders = new System.Windows.Forms.Button();
             this.rTriangle = new System.Windows.Forms.Button();
             this.eTriangle = new System.Windows.Forms.Button();
+            this.Rectangle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 67);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(803, 380);
@@ -222,11 +224,22 @@
             this.eTriangle.UseVisualStyleBackColor = true;
             this.eTriangle.Click += new System.EventHandler(this.eTriangle_Click);
             // 
+            // Rectangle
+            // 
+            this.Rectangle.Location = new System.Drawing.Point(527, 5);
+            this.Rectangle.Name = "Rectangle";
+            this.Rectangle.Size = new System.Drawing.Size(65, 56);
+            this.Rectangle.TabIndex = 26;
+            this.Rectangle.Text = "Rectangle";
+            this.Rectangle.UseVisualStyleBackColor = true;
+            this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Rectangle);
             this.Controls.Add(this.eTriangle);
             this.Controls.Add(this.rTriangle);
             this.Controls.Add(this.FillAndBorders);
@@ -273,6 +286,7 @@
         private System.Windows.Forms.Button FillAndBorders;
         private System.Windows.Forms.Button rTriangle;
         private System.Windows.Forms.Button eTriangle;
+        private System.Windows.Forms.Button Rectangle;
     }
 }
 

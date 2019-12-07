@@ -50,10 +50,13 @@
     <Compile Include="BordersEquilateralTriangle.cs" />
     <Compile Include="BordersFigures.cs" />
     <Compile Include="BordersLine.cs" />
+    <Compile Include="BordersRectangle.cs" />
     <Compile Include="Brash.cs" />
     <Compile Include="BordersRightTriangle.cs" />
     <Compile Include="EquilateralTriangle.cs" />
     <Compile Include="EquilateralTriangleFactory.cs" />
+    <Compile Include="Rectangle.cs" />
+    <Compile Include="RectangleFactory.cs" />
     <Compile Include="RightTriangleFactory.cs" />
     <Compile Include="RightTriangle.cs" />
     <Compile Include="NonFill.cs" />

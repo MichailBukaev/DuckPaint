@@ -44,7 +44,7 @@ namespace DuckPaint
 
             formBorders.DrawBorders(x1, y1, x2, y2, blankBitmap);
 
-            fillFigures.DrawFill(x1, y1, x2, y2, blankBitmap);
+            fillFigures.DrawFill(x1, y1, x1, y1, blankBitmap);
 
 
 

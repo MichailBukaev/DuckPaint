@@ -241,7 +241,7 @@ namespace DuckPaint
             flagRewrieStartPoint = false;
         }
 
-        private void Rect_Click(object sender, EventArgs e)
+        private void Rectangle_Click(object sender, EventArgs e)
         {
             figureFactory = new RectFactory();
             figure = figureFactory.Create(flagTypeOfDraw);

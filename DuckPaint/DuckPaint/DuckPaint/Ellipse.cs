@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace DuckPaint 
+namespace DuckPaint
 {
-    public class EquilateralTriangle : Figure
+    public class Ellipse : Figure
     {
-        public EquilateralTriangle(string TypeOfDraw)
+        public Ellipse(string TypeOfDraw)
         {
-            this.formBorders = new BordersEquilateralTriangle();
+            this.formBorders = new BordersEllipse();
             switch (TypeOfDraw)
             {
                 case "borders":
@@ -29,7 +29,6 @@ namespace DuckPaint
             }
         }
 
-
         public override Bitmap Draw(int x1, int y1, int x2, int y2, bool key, Bitmap bitMap)
         {
             Rectangle rec = new Rectangle(0, 0, bitMap.Width, bitMap.Height);
@@ -45,9 +44,9 @@ namespace DuckPaint
 
             formBorders.DrawBorders(x1, y1, x2, y2, blankBitmap);
 
-            y2 = y1- Convert.ToInt32(Math.Sqrt(Math.Pow((x1 - x2), 2)- Math.Pow(((x1 - x2)/2), 2))); 
-            
             fillFigures.DrawFill(x1, y1, x2, y2, blankBitmap);
+
+
 
             Graphics graphics = Graphics.FromImage(bitMap);
             graphics.DrawImage(blankBitmap, 0, 0);
