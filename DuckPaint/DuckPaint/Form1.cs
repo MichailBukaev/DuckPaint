@@ -30,6 +30,7 @@ namespace DuckPaint
 
 
         int startX, startY;
+        int firstPointX = 0, firstPointY = 0;
 
         public Form1()
         {
@@ -64,8 +65,11 @@ namespace DuckPaint
         private void pictureBox1_MouseDown_1(object sender, MouseEventArgs e)
         {
             flagDownMouse = true;
-            startX = e.Location.X;
-            startY = e.Location.Y;
+            if (flagMethWorkMouse != "MouseClickByPoint")
+            {
+                startX = e.Location.X;
+                startY = e.Location.Y;
+            }
         }
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
@@ -102,7 +106,6 @@ namespace DuckPaint
         private void button_Fill_Click(object sender, EventArgs e)
         {
             flagMethWorkMouse = "MouseClick";
-
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -112,9 +115,32 @@ namespace DuckPaint
                 fill.Filling(e.X, e.Y, this.bitMap);
                 pictureBox1.Image = bitMap;
             }
+            else if (flagMethWorkMouse == "MouseClickByPoint")
+            {
+                if (firstPointX ==0 && firstPointY == 0)
+                {
+                    firstPointX = e.Location.X;
+                    firstPointY = e.Location.Y;
+                    startX = e.Location.X;
+                    startY = e.Location.Y;
+                }
+                figure.Draw(startX, startY, e.Location.X, e.Location.Y, false, bitMap);
+                startX = e.Location.X;
+                startY = e.Location.Y;
+                pictureBox1.Image = bitMap;
+            }
         }
 
-       
+        private void pictureBox1_DoubleClick(object sender, EventArgs e)
+        {
+            if (flagMethWorkMouse == "MouseClickByPoint")
+            {
+                figure.Draw(startX, startY, firstPointX, firstPointY, false, bitMap);
+                firstPointX = 0;
+                firstPointY = 0;
+                pictureBox1.Image = bitMap;
+            }
+        }
 
         private void Blue_MouseDown(object sender, MouseEventArgs e)
         {
@@ -247,6 +273,17 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+        }
+
+
+        private void PolygonByPoint_Click(object sender, EventArgs e)
+        {
+            figureFactory = new PolygonByPointFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseClickByPoint";
+            flagRewrieStartPoint = false;
+            firstPointX = 0;
+            firstPointY = 0;
         }
 
         private void Line_Click(object sender, EventArgs e)

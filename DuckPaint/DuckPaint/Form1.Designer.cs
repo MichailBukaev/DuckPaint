@@ -46,6 +46,7 @@
             this.rTriangle = new System.Windows.Forms.Button();
             this.eTriangle = new System.Windows.Forms.Button();
             this.Rectangle = new System.Windows.Forms.Button();
+            this.PolygonByPoint = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             this.SuspendLayout();
@@ -58,6 +59,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(803, 380);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.DoubleClick += new System.EventHandler(this.pictureBox1_DoubleClick);
             this.pictureBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseClick);
             this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown_1);
             this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove_1);
@@ -176,7 +178,7 @@
             // 
             // button_Fill
             // 
-            this.button_Fill.Location = new System.Drawing.Point(380, 5);
+            this.button_Fill.Location = new System.Drawing.Point(728, 5);
             this.button_Fill.Name = "button_Fill";
             this.button_Fill.Size = new System.Drawing.Size(60, 56);
             this.button_Fill.TabIndex = 21;
@@ -186,7 +188,7 @@
             // 
             // OnlyBordres
             // 
-            this.OnlyBordres.Location = new System.Drawing.Point(690, 7);
+            this.OnlyBordres.Location = new System.Drawing.Point(598, 5);
             this.OnlyBordres.Name = "OnlyBordres";
             this.OnlyBordres.Size = new System.Drawing.Size(92, 23);
             this.OnlyBordres.TabIndex = 22;
@@ -196,7 +198,7 @@
             // 
             // FillAndBorders
             // 
-            this.FillAndBorders.Location = new System.Drawing.Point(690, 36);
+            this.FillAndBorders.Location = new System.Drawing.Point(598, 34);
             this.FillAndBorders.Name = "FillAndBorders";
             this.FillAndBorders.Size = new System.Drawing.Size(92, 23);
             this.FillAndBorders.TabIndex = 23;
@@ -234,11 +236,22 @@
             this.Rectangle.UseVisualStyleBackColor = true;
             this.Rectangle.Click += new System.EventHandler(this.Rectangle_Click);
             // 
+            // PolygonByPoint
+            // 
+            this.PolygonByPoint.Location = new System.Drawing.Point(380, 5);
+            this.PolygonByPoint.Name = "PolygonByPoint";
+            this.PolygonByPoint.Size = new System.Drawing.Size(60, 56);
+            this.PolygonByPoint.TabIndex = 27;
+            this.PolygonByPoint.Text = "Polygon By Point";
+            this.PolygonByPoint.UseVisualStyleBackColor = true;
+            this.PolygonByPoint.Click += new System.EventHandler(this.PolygonByPoint_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.PolygonByPoint);
             this.Controls.Add(this.Rectangle);
             this.Controls.Add(this.eTriangle);
             this.Controls.Add(this.rTriangle);
@@ -287,6 +300,7 @@
         private System.Windows.Forms.Button rTriangle;
         private System.Windows.Forms.Button eTriangle;
         private System.Windows.Forms.Button Rectangle;
+        private System.Windows.Forms.Button PolygonByPoint;
     }
 }
 
