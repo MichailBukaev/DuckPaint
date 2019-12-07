@@ -241,6 +241,14 @@ namespace DuckPaint
             flagRewrieStartPoint = false;
         }
 
+        private void Rect_Click(object sender, EventArgs e)
+        {
+            figureFactory = new RectFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseMove";
+            flagRewrieStartPoint = false;
+        }
+
         private void Line_Click(object sender, EventArgs e)
         {
             figureFactory = new LineFactory();
