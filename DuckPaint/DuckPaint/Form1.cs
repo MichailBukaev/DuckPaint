@@ -12,18 +12,19 @@ namespace DuckPaint
 {
     public partial class Form1 : Form
     {
-        Bitmap bitMap;
+        Bitmap bitMap, bitmap_copy;
         Bitmap bitMapTmp;
         FigureFactory figureFactory;
         Figure figure;
         Brush brush;
         Fill fill;
 
+       // char flag_button = '0';
+       
         bool flagDownMouse = false;
         string flagMethWorkMouse = " ";
         string flagTypeOfDraw = "borders";
         bool flagUsBitMapTmp = false;
-
         bool flagRewrieStartPoint = false;
 
 
@@ -70,6 +71,8 @@ namespace DuckPaint
                 startX = e.Location.X;
                 startY = e.Location.Y;
             }
+
+
         }
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
@@ -275,6 +278,24 @@ namespace DuckPaint
             flagRewrieStartPoint = false;
         }
 
+        private void Polygon_Click(object sender, EventArgs e)
+        {
+            figureFactory = new PolygonFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseMove";
+            flagRewrieStartPoint = false;
+        }
+
+        private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NumericForPolygon_Click(object sender, EventArgs e)
+        {
+            //NumericForPolygon.Visible = true;
+            //flag_button = 'P';
+        }
 
         private void PolygonByPoint_Click(object sender, EventArgs e)
         {

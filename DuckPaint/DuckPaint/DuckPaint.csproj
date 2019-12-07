@@ -51,13 +51,16 @@
     <Compile Include="BordersFigures.cs" />
     <Compile Include="BordersLine.cs" />
     <Compile Include="BordersPlygonByPoint.cs" />
+    <Compile Include="BordersPolygon.cs" />
     <Compile Include="BordersRectangle.cs" />
     <Compile Include="Brash.cs" />
     <Compile Include="BordersRightTriangle.cs" />
     <Compile Include="EquilateralTriangle.cs" />
     <Compile Include="EquilateralTriangleFactory.cs" />
     <Compile Include="PlygonByPoint.cs" />
+    <Compile Include="Polygon.cs" />
     <Compile Include="PolygonByPointFactory.cs" />
+    <Compile Include="PolygonFactory.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="RectangleFactory.cs" />
     <Compile Include="RightTriangleFactory.cs" />
