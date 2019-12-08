@@ -18,15 +18,16 @@ namespace DuckPaint
         Figure figure;
         Brush brush;
         Fill fill;
+        Angles angl;
 
-       // char flag_button = '0';
-       
+        // char flag_button = '0';
+
         bool flagDownMouse = false;
         string flagMethWorkMouse = " ";
         string flagTypeOfDraw = "borders";
         bool flagUsBitMapTmp = false;
         bool flagRewrieStartPoint = false;
-
+        bool flagPolygonNum = false;
 
 
 
@@ -42,7 +43,7 @@ namespace DuckPaint
         {
             brush.Size = trackBarSizBrush.Value;
         }
-       
+
 
         private void Form1_Load_1(object sender, EventArgs e)
         {
@@ -55,6 +56,7 @@ namespace DuckPaint
 
         private void pictureBox1_MouseUp_1(object sender, MouseEventArgs e)
         {
+
             flagDownMouse = false;
             if (flagUsBitMapTmp)
             {
@@ -120,7 +122,7 @@ namespace DuckPaint
             }
             else if (flagMethWorkMouse == "MouseClickByPoint")
             {
-                if (firstPointX ==0 && firstPointY == 0)
+                if (firstPointX == 0 && firstPointY == 0)
                 {
                     firstPointX = e.Location.X;
                     firstPointY = e.Location.Y;
@@ -151,7 +153,7 @@ namespace DuckPaint
             {
                 fill.Color = Color.Blue;
             }
-            else if(e.Button == MouseButtons.Left)
+            else if (e.Button == MouseButtons.Left)
             {
                 brush.Color = Color.Blue;
             }
@@ -280,6 +282,9 @@ namespace DuckPaint
 
         private void Polygon_Click(object sender, EventArgs e)
         {
+
+            NumericForPolygon.Visible = true;
+            flagPolygonNum = true;
             figureFactory = new PolygonFactory();
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
@@ -287,14 +292,14 @@ namespace DuckPaint
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
-        {
-
+        { 
+            angl.Angl = (int)NumericForPolygon.Value;
         }
 
         private void NumericForPolygon_Click(object sender, EventArgs e)
         {
-            //NumericForPolygon.Visible = true;
-            //flag_button = 'P';
+            
+
         }
 
         private void PolygonByPoint_Click(object sender, EventArgs e)

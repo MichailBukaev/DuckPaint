@@ -40,11 +40,6 @@ namespace DuckPaint
             Bitmap blankBitmap = new Bitmap(bitMap.Width, bitMap.Height);
             blankBitmap.MakeTransparent();
 
-            if (key)
-            {
-                y2 = y1 + Math.Abs(x2 - x1);
-            }
-
             formBorders.DrawBorders(x1, y1, x2, y2, blankBitmap);
 
             fillFigures.DrawFill(x1, y1, x2, y2, blankBitmap);

@@ -265,6 +265,7 @@
             this.NumericForPolygon.Name = "NumericForPolygon";
             this.NumericForPolygon.Size = new System.Drawing.Size(40, 20);
             this.NumericForPolygon.TabIndex = 29;
+            this.NumericForPolygon.Visible = false;
             this.NumericForPolygon.ValueChanged += new System.EventHandler(this.NumericForPolygon_ValueChanged);
             this.NumericForPolygon.Click += new System.EventHandler(this.PolygonByPoint_Click);
             // 
