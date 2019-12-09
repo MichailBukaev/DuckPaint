@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DuckPaint
 {
-    public class Angles
+    public class FigureOption
     {
-        private static Angles angl = null;
-        private static int angles;
+        private static FigureOption angl = null;
+        private int angles = 6;
 
         public int Angl
         { 
@@ -23,17 +23,21 @@ namespace DuckPaint
                 {
                     angles = value;
                 }
-            } 
+            }
+            get
+            {
+                return angles;
+            }
         }
 
-        private Angles()
+        private FigureOption()
         { }
 
-        public static Angles SetAngles()
+        public static FigureOption SetAngles()
         {
             if (angl == null)
             {
-                angl = new Angles();
+                angl = new FigureOption();
             }
             return angl;
         }

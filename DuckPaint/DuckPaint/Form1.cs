@@ -18,9 +18,9 @@ namespace DuckPaint
         Figure figure;
         Brush brush;
         Fill fill;
-        Angles angl;
+        FigureOption angl;
 
-        // char flag_button = '0';
+       
 
         bool flagDownMouse = false;
         string flagMethWorkMouse = " ";
@@ -52,6 +52,7 @@ namespace DuckPaint
             brush = Brush.NewBrash();
             fill = Fill.NewFill();
             pictureBox1.Image = bitMap;
+            angl = FigureOption.SetAngles();
         }
 
         private void pictureBox1_MouseUp_1(object sender, MouseEventArgs e)
@@ -106,11 +107,15 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
         }
 
         private void button_Fill_Click(object sender, EventArgs e)
         {
             flagMethWorkMouse = "MouseClick";
+            OnlyBordres.Enabled = false;
+            FillAndBorders.Enabled = false;
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
@@ -262,6 +267,8 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
         }
 
         private void eTriangle_Click(object sender, EventArgs e)
@@ -270,6 +277,8 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
         }
 
         private void Rectangle_Click(object sender, EventArgs e)
@@ -278,17 +287,27 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
         }
 
         private void Polygon_Click(object sender, EventArgs e)
         {
 
-            NumericForPolygon.Visible = true;
+            NumericForPolygon.Enabled = true;
             flagPolygonNum = true;
             figureFactory = new PolygonFactory();
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
+        }
+
+        private void Clear_Click(object sender, EventArgs e)
+        {
+            this.bitMap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            pictureBox1.Image = bitMap;
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
@@ -296,11 +315,7 @@ namespace DuckPaint
             angl.Angl = (int)NumericForPolygon.Value;
         }
 
-        private void NumericForPolygon_Click(object sender, EventArgs e)
-        {
-            
-
-        }
+       
 
         private void PolygonByPoint_Click(object sender, EventArgs e)
         {
@@ -310,6 +325,8 @@ namespace DuckPaint
             flagRewrieStartPoint = false;
             firstPointX = 0;
             firstPointY = 0;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = false;
         }
 
         private void Line_Click(object sender, EventArgs e)
@@ -318,6 +335,8 @@ namespace DuckPaint
             figure = figureFactory.Create(flagTypeOfDraw);
             flagMethWorkMouse = "MouseMove";
             flagRewrieStartPoint = true;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = false;
         }
 
 

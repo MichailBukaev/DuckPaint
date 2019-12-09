@@ -5,7 +5,6 @@ namespace DuckPaint
     {
         protected BordersFigures formBorders;
         protected FillFigures fillFigures;
-        protected AnglesFigures anglesFigures;
         public virtual Bitmap Draw(int x1, int y1, int x2, int y2, bool key, Bitmap bitMap) { return bitMap; }
 
     }

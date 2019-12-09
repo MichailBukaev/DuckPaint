@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FigureOption.cs" />
     <Compile Include="BordersEllipse.cs" />
     <Compile Include="BordersEquilateralTriangle.cs" />
     <Compile Include="BordersFigures.cs" />

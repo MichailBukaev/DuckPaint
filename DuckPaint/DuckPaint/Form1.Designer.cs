@@ -49,6 +49,7 @@
             this.PolygonByPoint = new System.Windows.Forms.Button();
             this.Polygon = new System.Windows.Forms.Button();
             this.NumericForPolygon = new System.Windows.Forms.NumericUpDown();
+            this.Clear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
@@ -181,9 +182,9 @@
             // 
             // button_Fill
             // 
-            this.button_Fill.Location = new System.Drawing.Point(751, 5);
+            this.button_Fill.Location = new System.Drawing.Point(691, 5);
             this.button_Fill.Name = "button_Fill";
-            this.button_Fill.Size = new System.Drawing.Size(37, 52);
+            this.button_Fill.Size = new System.Drawing.Size(37, 56);
             this.button_Fill.TabIndex = 21;
             this.button_Fill.Text = "Fill";
             this.button_Fill.UseVisualStyleBackColor = true;
@@ -191,9 +192,10 @@
             // 
             // OnlyBordres
             // 
+            this.OnlyBordres.Enabled = false;
             this.OnlyBordres.Location = new System.Drawing.Point(598, 5);
             this.OnlyBordres.Name = "OnlyBordres";
-            this.OnlyBordres.Size = new System.Drawing.Size(87, 23);
+            this.OnlyBordres.Size = new System.Drawing.Size(87, 27);
             this.OnlyBordres.TabIndex = 22;
             this.OnlyBordres.Text = "OnlyBordres";
             this.OnlyBordres.UseVisualStyleBackColor = true;
@@ -201,9 +203,10 @@
             // 
             // FillAndBorders
             // 
+            this.FillAndBorders.Enabled = false;
             this.FillAndBorders.Location = new System.Drawing.Point(598, 34);
             this.FillAndBorders.Name = "FillAndBorders";
-            this.FillAndBorders.Size = new System.Drawing.Size(87, 23);
+            this.FillAndBorders.Size = new System.Drawing.Size(87, 27);
             this.FillAndBorders.TabIndex = 23;
             this.FillAndBorders.Text = "FillAndBorders";
             this.FillAndBorders.UseVisualStyleBackColor = true;
@@ -253,7 +256,7 @@
             // 
             this.Polygon.Location = new System.Drawing.Point(314, 5);
             this.Polygon.Name = "Polygon";
-            this.Polygon.Size = new System.Drawing.Size(60, 55);
+            this.Polygon.Size = new System.Drawing.Size(60, 26);
             this.Polygon.TabIndex = 28;
             this.Polygon.Text = "Polygon";
             this.Polygon.UseVisualStyleBackColor = true;
@@ -261,19 +264,33 @@
             // 
             // NumericForPolygon
             // 
-            this.NumericForPolygon.Location = new System.Drawing.Point(692, 36);
+            this.NumericForPolygon.Location = new System.Drawing.Point(314, 37);
             this.NumericForPolygon.Name = "NumericForPolygon";
-            this.NumericForPolygon.Size = new System.Drawing.Size(40, 20);
+            this.NumericForPolygon.Size = new System.Drawing.Size(60, 20);
             this.NumericForPolygon.TabIndex = 29;
-            this.NumericForPolygon.Visible = false;
+            this.NumericForPolygon.Value = new decimal(new int[] {
+            6,
+            0,
+            0,
+            0});
             this.NumericForPolygon.ValueChanged += new System.EventHandler(this.NumericForPolygon_ValueChanged);
-            this.NumericForPolygon.Click += new System.EventHandler(this.PolygonByPoint_Click);
+            // 
+            // Clear
+            // 
+            this.Clear.Location = new System.Drawing.Point(754, 5);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(41, 55);
+            this.Clear.TabIndex = 30;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.NumericForPolygon);
             this.Controls.Add(this.Polygon);
             this.Controls.Add(this.PolygonByPoint);
@@ -329,6 +346,7 @@
         private System.Windows.Forms.Button PolygonByPoint;
         private System.Windows.Forms.Button Polygon;
         private System.Windows.Forms.NumericUpDown NumericForPolygon;
+        private System.Windows.Forms.Button Clear;
     }
 }
 

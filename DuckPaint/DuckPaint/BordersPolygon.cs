@@ -9,12 +9,12 @@ namespace DuckPaint
 {
      class BordersPolygon : BordersFigures
     {
-        public int n = 6;
 
         public void DrawBorders(int x1, int y1, int x2, int y2, Bitmap bitMap)
         {
+            FigureOption anglesCurrent = FigureOption.SetAngles();
             Brush brush = Brush.NewBrash();
-            int X = x1, Y = y1, angles = n,
+            int X = x1, Y = y1, angles = anglesCurrent.Angl, r;
             r = Convert.ToInt32(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2)));
 
             if (angles < 3)
