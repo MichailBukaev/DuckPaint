@@ -26,7 +26,10 @@ namespace DuckPaint
             }
             return canvas;
         }
-
+        public void Add(VectorFigure vectorFigure)
+        {
+            figures.Add(vectorFigure);
+        }
         public Bitmap UpDateAll(Bitmap bitmap)
         {
             foreach(VectorFigure i in figures)

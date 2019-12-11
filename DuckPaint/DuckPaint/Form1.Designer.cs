@@ -50,15 +50,38 @@
             this.Polygon = new System.Windows.Forms.Button();
             this.NumericForPolygon = new System.Windows.Forms.NumericUpDown();
             this.Clear = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Raster = new System.Windows.Forms.Panel();
+            this.button_Raster = new System.Windows.Forms.Button();
+            this.Vector = new System.Windows.Forms.Panel();
+            this.trackBarVector = new System.Windows.Forms.TrackBar();
+            this.RedVector = new System.Windows.Forms.Button();
+            this.ClearVector = new System.Windows.Forms.Button();
+            this.pictureBoxVector = new System.Windows.Forms.PictureBox();
+            this.OrangeVector = new System.Windows.Forms.Button();
+            this.YellowVector = new System.Windows.Forms.Button();
+            this.GreenVector = new System.Windows.Forms.Button();
+            this.AquaVector = new System.Windows.Forms.Button();
+            this.BlueVector = new System.Windows.Forms.Button();
+            this.VioletVector = new System.Windows.Forms.Button();
+            this.BlackVector = new System.Windows.Forms.Button();
+            this.button_Vector = new System.Windows.Forms.Button();
+            this.button_Draw = new System.Windows.Forms.Button();
+            this.button_Change = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
+            this.Raster.SuspendLayout();
+            this.Vector.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVector)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 67);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 61);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(803, 380);
             this.pictureBox1.TabIndex = 0;
@@ -71,7 +94,7 @@
             // 
             // trackBarSizBrush
             // 
-            this.trackBarSizBrush.Location = new System.Drawing.Point(-1, 12);
+            this.trackBarSizBrush.Location = new System.Drawing.Point(10, 11);
             this.trackBarSizBrush.Maximum = 5;
             this.trackBarSizBrush.Minimum = 1;
             this.trackBarSizBrush.Name = "trackBarSizBrush";
@@ -83,7 +106,7 @@
             // Black
             // 
             this.Black.BackColor = System.Drawing.Color.Black;
-            this.Black.Location = new System.Drawing.Point(123, 5);
+            this.Black.Location = new System.Drawing.Point(124, 4);
             this.Black.Name = "Black";
             this.Black.Size = new System.Drawing.Size(25, 26);
             this.Black.TabIndex = 18;
@@ -93,7 +116,7 @@
             // Violet
             // 
             this.Violet.BackColor = System.Drawing.Color.Violet;
-            this.Violet.Location = new System.Drawing.Point(185, 35);
+            this.Violet.Location = new System.Drawing.Point(186, 34);
             this.Violet.Name = "Violet";
             this.Violet.Size = new System.Drawing.Size(25, 26);
             this.Violet.TabIndex = 17;
@@ -103,7 +126,7 @@
             // Blue
             // 
             this.Blue.BackColor = System.Drawing.Color.Blue;
-            this.Blue.Location = new System.Drawing.Point(154, 35);
+            this.Blue.Location = new System.Drawing.Point(155, 34);
             this.Blue.Name = "Blue";
             this.Blue.Size = new System.Drawing.Size(25, 26);
             this.Blue.TabIndex = 16;
@@ -113,7 +136,7 @@
             // Aqua
             // 
             this.Aqua.BackColor = System.Drawing.Color.Aqua;
-            this.Aqua.Location = new System.Drawing.Point(123, 35);
+            this.Aqua.Location = new System.Drawing.Point(124, 34);
             this.Aqua.Name = "Aqua";
             this.Aqua.Size = new System.Drawing.Size(25, 26);
             this.Aqua.TabIndex = 15;
@@ -123,7 +146,7 @@
             // Green
             // 
             this.Green.BackColor = System.Drawing.Color.Green;
-            this.Green.Location = new System.Drawing.Point(216, 5);
+            this.Green.Location = new System.Drawing.Point(217, 4);
             this.Green.Name = "Green";
             this.Green.Size = new System.Drawing.Size(25, 26);
             this.Green.TabIndex = 14;
@@ -133,7 +156,7 @@
             // Yellow
             // 
             this.Yellow.BackColor = System.Drawing.Color.Yellow;
-            this.Yellow.Location = new System.Drawing.Point(185, 5);
+            this.Yellow.Location = new System.Drawing.Point(186, 4);
             this.Yellow.Name = "Yellow";
             this.Yellow.Size = new System.Drawing.Size(25, 26);
             this.Yellow.TabIndex = 13;
@@ -143,7 +166,7 @@
             // Orange
             // 
             this.Orange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Orange.Location = new System.Drawing.Point(154, 5);
+            this.Orange.Location = new System.Drawing.Point(155, 4);
             this.Orange.Name = "Orange";
             this.Orange.Size = new System.Drawing.Size(25, 26);
             this.Orange.TabIndex = 12;
@@ -153,7 +176,7 @@
             // Red
             // 
             this.Red.BackColor = System.Drawing.Color.Red;
-            this.Red.Location = new System.Drawing.Point(216, 35);
+            this.Red.Location = new System.Drawing.Point(217, 34);
             this.Red.Name = "Red";
             this.Red.Size = new System.Drawing.Size(25, 26);
             this.Red.TabIndex = 11;
@@ -162,7 +185,7 @@
             // 
             // Line
             // 
-            this.Line.Location = new System.Drawing.Point(248, 5);
+            this.Line.Location = new System.Drawing.Point(249, 4);
             this.Line.Name = "Line";
             this.Line.Size = new System.Drawing.Size(60, 26);
             this.Line.TabIndex = 19;
@@ -172,7 +195,7 @@
             // 
             // Ellipse
             // 
-            this.Ellipse.Location = new System.Drawing.Point(248, 34);
+            this.Ellipse.Location = new System.Drawing.Point(249, 33);
             this.Ellipse.Name = "Ellipse";
             this.Ellipse.Size = new System.Drawing.Size(60, 26);
             this.Ellipse.TabIndex = 20;
@@ -182,7 +205,7 @@
             // 
             // button_Fill
             // 
-            this.button_Fill.Location = new System.Drawing.Point(691, 5);
+            this.button_Fill.Location = new System.Drawing.Point(692, 4);
             this.button_Fill.Name = "button_Fill";
             this.button_Fill.Size = new System.Drawing.Size(37, 56);
             this.button_Fill.TabIndex = 21;
@@ -193,7 +216,7 @@
             // OnlyBordres
             // 
             this.OnlyBordres.Enabled = false;
-            this.OnlyBordres.Location = new System.Drawing.Point(598, 5);
+            this.OnlyBordres.Location = new System.Drawing.Point(599, 4);
             this.OnlyBordres.Name = "OnlyBordres";
             this.OnlyBordres.Size = new System.Drawing.Size(87, 27);
             this.OnlyBordres.TabIndex = 22;
@@ -204,7 +227,7 @@
             // FillAndBorders
             // 
             this.FillAndBorders.Enabled = false;
-            this.FillAndBorders.Location = new System.Drawing.Point(598, 34);
+            this.FillAndBorders.Location = new System.Drawing.Point(599, 33);
             this.FillAndBorders.Name = "FillAndBorders";
             this.FillAndBorders.Size = new System.Drawing.Size(87, 27);
             this.FillAndBorders.TabIndex = 23;
@@ -214,7 +237,7 @@
             // 
             // rTriangle
             // 
-            this.rTriangle.Location = new System.Drawing.Point(446, 3);
+            this.rTriangle.Location = new System.Drawing.Point(447, 2);
             this.rTriangle.Name = "rTriangle";
             this.rTriangle.Size = new System.Drawing.Size(75, 26);
             this.rTriangle.TabIndex = 24;
@@ -224,7 +247,7 @@
             // 
             // eTriangle
             // 
-            this.eTriangle.Location = new System.Drawing.Point(446, 34);
+            this.eTriangle.Location = new System.Drawing.Point(447, 33);
             this.eTriangle.Name = "eTriangle";
             this.eTriangle.Size = new System.Drawing.Size(75, 27);
             this.eTriangle.TabIndex = 25;
@@ -234,7 +257,7 @@
             // 
             // Rectangle
             // 
-            this.Rectangle.Location = new System.Drawing.Point(527, 5);
+            this.Rectangle.Location = new System.Drawing.Point(528, 4);
             this.Rectangle.Name = "Rectangle";
             this.Rectangle.Size = new System.Drawing.Size(65, 56);
             this.Rectangle.TabIndex = 26;
@@ -244,7 +267,7 @@
             // 
             // PolygonByPoint
             // 
-            this.PolygonByPoint.Location = new System.Drawing.Point(380, 5);
+            this.PolygonByPoint.Location = new System.Drawing.Point(381, 4);
             this.PolygonByPoint.Name = "PolygonByPoint";
             this.PolygonByPoint.Size = new System.Drawing.Size(60, 56);
             this.PolygonByPoint.TabIndex = 27;
@@ -254,7 +277,7 @@
             // 
             // Polygon
             // 
-            this.Polygon.Location = new System.Drawing.Point(314, 5);
+            this.Polygon.Location = new System.Drawing.Point(315, 4);
             this.Polygon.Name = "Polygon";
             this.Polygon.Size = new System.Drawing.Size(60, 26);
             this.Polygon.TabIndex = 28;
@@ -264,7 +287,7 @@
             // 
             // NumericForPolygon
             // 
-            this.NumericForPolygon.Location = new System.Drawing.Point(314, 37);
+            this.NumericForPolygon.Location = new System.Drawing.Point(315, 36);
             this.NumericForPolygon.Name = "NumericForPolygon";
             this.NumericForPolygon.Size = new System.Drawing.Size(60, 20);
             this.NumericForPolygon.TabIndex = 29;
@@ -277,7 +300,7 @@
             // 
             // Clear
             // 
-            this.Clear.Location = new System.Drawing.Point(754, 5);
+            this.Clear.Location = new System.Drawing.Point(755, 4);
             this.Clear.Name = "Clear";
             this.Clear.Size = new System.Drawing.Size(41, 55);
             this.Clear.TabIndex = 30;
@@ -285,39 +308,241 @@
             this.Clear.UseVisualStyleBackColor = true;
             this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1049, 24);
+            this.menuStrip1.TabIndex = 31;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Location = new System.Drawing.Point(106, -77);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(10, 58);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
+            // 
+            // Raster
+            // 
+            this.Raster.Controls.Add(this.trackBarSizBrush);
+            this.Raster.Controls.Add(this.Red);
+            this.Raster.Controls.Add(this.Clear);
+            this.Raster.Controls.Add(this.pictureBox1);
+            this.Raster.Controls.Add(this.Orange);
+            this.Raster.Controls.Add(this.NumericForPolygon);
+            this.Raster.Controls.Add(this.Yellow);
+            this.Raster.Controls.Add(this.Polygon);
+            this.Raster.Controls.Add(this.Green);
+            this.Raster.Controls.Add(this.PolygonByPoint);
+            this.Raster.Controls.Add(this.Aqua);
+            this.Raster.Controls.Add(this.Rectangle);
+            this.Raster.Controls.Add(this.Blue);
+            this.Raster.Controls.Add(this.eTriangle);
+            this.Raster.Controls.Add(this.Violet);
+            this.Raster.Controls.Add(this.rTriangle);
+            this.Raster.Controls.Add(this.Black);
+            this.Raster.Controls.Add(this.FillAndBorders);
+            this.Raster.Controls.Add(this.Line);
+            this.Raster.Controls.Add(this.OnlyBordres);
+            this.Raster.Controls.Add(this.Ellipse);
+            this.Raster.Controls.Add(this.button_Fill);
+            this.Raster.Location = new System.Drawing.Point(2, 46);
+            this.Raster.Name = "Raster";
+            this.Raster.Size = new System.Drawing.Size(819, 448);
+            this.Raster.TabIndex = 33;
+            // 
+            // button_Raster
+            // 
+            this.button_Raster.Location = new System.Drawing.Point(2, 12);
+            this.button_Raster.Name = "button_Raster";
+            this.button_Raster.Size = new System.Drawing.Size(89, 28);
+            this.button_Raster.TabIndex = 34;
+            this.button_Raster.Text = "Raster";
+            this.button_Raster.UseVisualStyleBackColor = true;
+            this.button_Raster.Click += new System.EventHandler(this.button_Raster_Click);
+            // 
+            // Vector
+            // 
+            this.Vector.Controls.Add(this.button_Change);
+            this.Vector.Controls.Add(this.button_Draw);
+            this.Vector.Controls.Add(this.trackBarVector);
+            this.Vector.Controls.Add(this.RedVector);
+            this.Vector.Controls.Add(this.ClearVector);
+            this.Vector.Controls.Add(this.pictureBoxVector);
+            this.Vector.Controls.Add(this.OrangeVector);
+            this.Vector.Controls.Add(this.YellowVector);
+            this.Vector.Controls.Add(this.GreenVector);
+            this.Vector.Controls.Add(this.AquaVector);
+            this.Vector.Controls.Add(this.BlueVector);
+            this.Vector.Controls.Add(this.VioletVector);
+            this.Vector.Controls.Add(this.BlackVector);
+            this.Vector.Location = new System.Drawing.Point(2, 46);
+            this.Vector.Name = "Vector";
+            this.Vector.Size = new System.Drawing.Size(825, 485);
+            this.Vector.TabIndex = 34;
+            this.Vector.Visible = false;
+            // 
+            // trackBarVector
+            // 
+            this.trackBarVector.Location = new System.Drawing.Point(10, 11);
+            this.trackBarVector.Maximum = 5;
+            this.trackBarVector.Minimum = 1;
+            this.trackBarVector.Name = "trackBarVector";
+            this.trackBarVector.Size = new System.Drawing.Size(104, 45);
+            this.trackBarVector.TabIndex = 1;
+            this.trackBarVector.Value = 1;
+            // 
+            // RedVector
+            // 
+            this.RedVector.BackColor = System.Drawing.Color.Red;
+            this.RedVector.Location = new System.Drawing.Point(217, 34);
+            this.RedVector.Name = "RedVector";
+            this.RedVector.Size = new System.Drawing.Size(25, 26);
+            this.RedVector.TabIndex = 11;
+            this.RedVector.UseVisualStyleBackColor = false;
+            // 
+            // ClearVector
+            // 
+            this.ClearVector.Location = new System.Drawing.Point(755, 4);
+            this.ClearVector.Name = "ClearVector";
+            this.ClearVector.Size = new System.Drawing.Size(41, 55);
+            this.ClearVector.TabIndex = 30;
+            this.ClearVector.Text = "Clear";
+            this.ClearVector.UseVisualStyleBackColor = true;
+            // 
+            // pictureBoxVector
+            // 
+            this.pictureBoxVector.BackColor = System.Drawing.Color.White;
+            this.pictureBoxVector.Location = new System.Drawing.Point(3, 66);
+            this.pictureBoxVector.Name = "pictureBoxVector";
+            this.pictureBoxVector.Size = new System.Drawing.Size(803, 380);
+            this.pictureBoxVector.TabIndex = 0;
+            this.pictureBoxVector.TabStop = false;
+            this.pictureBoxVector.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseDown);
+            this.pictureBoxVector.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseMove);
+            this.pictureBoxVector.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseUp);
+            // 
+            // OrangeVector
+            // 
+            this.OrangeVector.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.OrangeVector.Location = new System.Drawing.Point(155, 4);
+            this.OrangeVector.Name = "OrangeVector";
+            this.OrangeVector.Size = new System.Drawing.Size(25, 26);
+            this.OrangeVector.TabIndex = 12;
+            this.OrangeVector.UseVisualStyleBackColor = false;
+            // 
+            // YellowVector
+            // 
+            this.YellowVector.BackColor = System.Drawing.Color.Yellow;
+            this.YellowVector.Location = new System.Drawing.Point(186, 4);
+            this.YellowVector.Name = "YellowVector";
+            this.YellowVector.Size = new System.Drawing.Size(25, 26);
+            this.YellowVector.TabIndex = 13;
+            this.YellowVector.UseVisualStyleBackColor = false;
+            // 
+            // GreenVector
+            // 
+            this.GreenVector.BackColor = System.Drawing.Color.Green;
+            this.GreenVector.Location = new System.Drawing.Point(217, 4);
+            this.GreenVector.Name = "GreenVector";
+            this.GreenVector.Size = new System.Drawing.Size(25, 26);
+            this.GreenVector.TabIndex = 14;
+            this.GreenVector.UseVisualStyleBackColor = false;
+            // 
+            // AquaVector
+            // 
+            this.AquaVector.BackColor = System.Drawing.Color.Aqua;
+            this.AquaVector.Location = new System.Drawing.Point(124, 34);
+            this.AquaVector.Name = "AquaVector";
+            this.AquaVector.Size = new System.Drawing.Size(25, 26);
+            this.AquaVector.TabIndex = 15;
+            this.AquaVector.UseVisualStyleBackColor = false;
+            // 
+            // BlueVector
+            // 
+            this.BlueVector.BackColor = System.Drawing.Color.Blue;
+            this.BlueVector.Location = new System.Drawing.Point(155, 34);
+            this.BlueVector.Name = "BlueVector";
+            this.BlueVector.Size = new System.Drawing.Size(25, 26);
+            this.BlueVector.TabIndex = 16;
+            this.BlueVector.UseVisualStyleBackColor = false;
+            // 
+            // VioletVector
+            // 
+            this.VioletVector.BackColor = System.Drawing.Color.Violet;
+            this.VioletVector.Location = new System.Drawing.Point(186, 34);
+            this.VioletVector.Name = "VioletVector";
+            this.VioletVector.Size = new System.Drawing.Size(25, 26);
+            this.VioletVector.TabIndex = 17;
+            this.VioletVector.UseVisualStyleBackColor = false;
+            // 
+            // BlackVector
+            // 
+            this.BlackVector.BackColor = System.Drawing.Color.Black;
+            this.BlackVector.Location = new System.Drawing.Point(124, 4);
+            this.BlackVector.Name = "BlackVector";
+            this.BlackVector.Size = new System.Drawing.Size(25, 26);
+            this.BlackVector.TabIndex = 18;
+            this.BlackVector.UseVisualStyleBackColor = false;
+            this.BlackVector.Click += new System.EventHandler(this.BlackVector_Click);
+            // 
+            // button_Vector
+            // 
+            this.button_Vector.Location = new System.Drawing.Point(97, 12);
+            this.button_Vector.Name = "button_Vector";
+            this.button_Vector.Size = new System.Drawing.Size(89, 28);
+            this.button_Vector.TabIndex = 35;
+            this.button_Vector.Text = "Vector";
+            this.button_Vector.UseVisualStyleBackColor = true;
+            this.button_Vector.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button_Draw
+            // 
+            this.button_Draw.Location = new System.Drawing.Point(249, 4);
+            this.button_Draw.Name = "button_Draw";
+            this.button_Draw.Size = new System.Drawing.Size(83, 27);
+            this.button_Draw.TabIndex = 31;
+            this.button_Draw.Text = "Draw";
+            this.button_Draw.UseVisualStyleBackColor = true;
+            this.button_Draw.Click += new System.EventHandler(this.button_Draw_Click);
+            // 
+            // button_Change
+            // 
+            this.button_Change.Location = new System.Drawing.Point(249, 34);
+            this.button_Change.Name = "button_Change";
+            this.button_Change.Size = new System.Drawing.Size(83, 27);
+            this.button_Change.TabIndex = 32;
+            this.button_Change.Text = "Change";
+            this.button_Change.UseVisualStyleBackColor = true;
+            this.button_Change.Click += new System.EventHandler(this.button_Change_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Clear);
-            this.Controls.Add(this.NumericForPolygon);
-            this.Controls.Add(this.Polygon);
-            this.Controls.Add(this.PolygonByPoint);
-            this.Controls.Add(this.Rectangle);
-            this.Controls.Add(this.eTriangle);
-            this.Controls.Add(this.rTriangle);
-            this.Controls.Add(this.FillAndBorders);
-            this.Controls.Add(this.OnlyBordres);
-            this.Controls.Add(this.button_Fill);
-            this.Controls.Add(this.Ellipse);
-            this.Controls.Add(this.Line);
-            this.Controls.Add(this.Black);
-            this.Controls.Add(this.Violet);
-            this.Controls.Add(this.Blue);
-            this.Controls.Add(this.Aqua);
-            this.Controls.Add(this.Green);
-            this.Controls.Add(this.Yellow);
-            this.Controls.Add(this.Orange);
-            this.Controls.Add(this.Red);
-            this.Controls.Add(this.trackBarSizBrush);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1049, 569);
+            this.Controls.Add(this.Vector);
+            this.Controls.Add(this.button_Vector);
+            this.Controls.Add(this.button_Raster);
+            this.Controls.Add(this.Raster);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).EndInit();
+            this.Raster.ResumeLayout(false);
+            this.Raster.PerformLayout();
+            this.Vector.ResumeLayout(false);
+            this.Vector.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarVector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVector)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,6 +572,25 @@
         private System.Windows.Forms.Button Polygon;
         private System.Windows.Forms.NumericUpDown NumericForPolygon;
         private System.Windows.Forms.Button Clear;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel Raster;
+        private System.Windows.Forms.Button button_Raster;
+        private System.Windows.Forms.Panel Vector;
+        private System.Windows.Forms.TrackBar trackBarVector;
+        private System.Windows.Forms.Button RedVector;
+        private System.Windows.Forms.Button ClearVector;
+        private System.Windows.Forms.PictureBox pictureBoxVector;
+        private System.Windows.Forms.Button OrangeVector;
+        private System.Windows.Forms.Button YellowVector;
+        private System.Windows.Forms.Button GreenVector;
+        private System.Windows.Forms.Button AquaVector;
+        private System.Windows.Forms.Button BlueVector;
+        private System.Windows.Forms.Button VioletVector;
+        private System.Windows.Forms.Button BlackVector;
+        private System.Windows.Forms.Button button_Vector;
+        private System.Windows.Forms.Button button_Change;
+        private System.Windows.Forms.Button button_Draw;
     }
 }
 

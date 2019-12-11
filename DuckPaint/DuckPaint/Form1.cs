@@ -20,7 +20,15 @@ namespace DuckPaint
         Fill fill;
         FigureOption angl;
 
-       
+        Bitmap Vbitmap;
+        Canvas Vcanvas;
+        VectorFigure Vfigure;
+        VectorFigureFactory VfigureFactory;
+        Point VpointForChange;
+        int indexPoint;
+
+
+
 
         bool flagDownMouse = false;
         string flagMethWorkMouse = " ";
@@ -29,10 +37,17 @@ namespace DuckPaint
         bool flagRewrieStartPoint = false;
         bool flagPolygonNum = false;
 
+        bool VflagMode = true;
+        bool VflagDownMouse = false;
+
 
 
         int startX, startY;
         int firstPointX = 0, firstPointY = 0;
+
+        Color Vcolor = Color.Black;
+        int Vsize = 1;
+        
 
         public Form1()
         {
@@ -53,6 +68,8 @@ namespace DuckPaint
             fill = Fill.NewFill();
             pictureBox1.Image = bitMap;
             angl = FigureOption.SetAngles();
+            Vcanvas = Canvas.CreateCanvas();
+            //VfigureFactory = new VectorLineFactory();
         }
 
         private void pictureBox1_MouseUp_1(object sender, MouseEventArgs e)
@@ -308,6 +325,112 @@ namespace DuckPaint
         {
             this.bitMap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.Image = bitMap;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Raster.Visible = false;
+            Vector.Visible = true;
+        }
+
+        private void button_Raster_Click(object sender, EventArgs e)
+        {
+            Raster.Visible = true;
+            Vector.Visible = false;
+
+        }
+
+        private void button_Draw_Click(object sender, EventArgs e)
+        {
+            VflagMode = true;
+        }
+
+        private void button_Change_Click(object sender, EventArgs e)
+        {
+            VflagMode = false;
+        }
+
+        private void pictureBoxVector_MouseDown(object sender, MouseEventArgs e)
+        {
+            VflagDownMouse = true;
+            if (VflagMode)
+            {
+               
+                Vfigure = VfigureFactory.Creator(e.Location, Vsize, Vcolor);
+                Vcanvas.Add(Vfigure);
+            }
+            else
+            {
+                Vfigure = Vcanvas.FindPoint(e.Location, ref VpointForChange);
+                if (Vfigure != null)
+                {
+                    for (int i = 0; i < Vfigure.Points.Count; i++)
+                    {
+                        if (Vfigure.Points[i] == VpointForChange)
+                        {
+                            indexPoint = i;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        private void pictureBoxVector_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (VflagDownMouse)
+            {
+                if (VflagMode)
+                {
+                    Vfigure.MouseMoveTillCreation(e.Location);
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+                else
+                {
+                    if (Vfigure != null)
+                    {
+                        if (Control.ModifierKeys == Keys.Shift)
+                        {
+                            Vfigure = ModeVector.MoveFigure(Vfigure, indexPoint, e.Location);
+                            Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                            Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                            pictureBoxVector.Image = Vbitmap;
+                        }
+                        else
+                        {
+                            Vfigure = ModeVector.MovePoint(Vfigure, indexPoint, e.Location);
+                            Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                            Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                            pictureBoxVector.Image = Vbitmap;
+                        }
+                    }
+                }
+            }
+        }
+
+        private void pictureBoxVector_MouseUp(object sender, MouseEventArgs e)
+        {
+            VflagDownMouse = false;
+        }
+
+        private void BlackVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Black;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Black;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)

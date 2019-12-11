@@ -30,6 +30,7 @@ namespace DuckPaint
         
 
         public abstract void MouseMoveTillCreation(Point p);
+
         
 
 
