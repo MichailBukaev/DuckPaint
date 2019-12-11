@@ -46,29 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vector\Canvas.cs" />
     <Compile Include="FigureOption.cs" />
-    <Compile Include="BordersEllipse.cs" />
+    <Compile Include="Ellipse\BordersEllipse.cs" />
     <Compile Include="BordersEquilateralTriangle.cs" />
     <Compile Include="BordersFigures.cs" />
     <Compile Include="BordersLine.cs" />
     <Compile Include="BordersPlygonByPoint.cs" />
-    <Compile Include="BordersPolygon.cs" />
+    <Compile Include="Polygon\BordersPolygon.cs" />
     <Compile Include="BordersRectangle.cs" />
     <Compile Include="Brash.cs" />
     <Compile Include="BordersRightTriangle.cs" />
     <Compile Include="EquilateralTriangle.cs" />
     <Compile Include="EquilateralTriangleFactory.cs" />
     <Compile Include="PlygonByPoint.cs" />
-    <Compile Include="Polygon.cs" />
+    <Compile Include="Polygon\Polygon.cs" />
     <Compile Include="PolygonByPointFactory.cs" />
-    <Compile Include="PolygonFactory.cs" />
+    <Compile Include="Polygon\PolygonFactory.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="RectangleFactory.cs" />
     <Compile Include="RightTriangleFactory.cs" />
     <Compile Include="RightTriangle.cs" />
     <Compile Include="NonFill.cs" />
-    <Compile Include="Ellipse.cs" />
-    <Compile Include="EllipseFactory.cs" />
+    <Compile Include="Ellipse\Ellipse.cs" />
+    <Compile Include="Ellipse\EllipseFactory.cs" />
     <Compile Include="Figure.cs" />
     <Compile Include="FigureFactory.cs" />
     <Compile Include="Fill.cs" />
