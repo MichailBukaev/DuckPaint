@@ -97,6 +97,7 @@ namespace DuckPaint
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
         {
+
             if (flagMethWorkMouse == "MouseMove" && flagDownMouse)
             {
                 flagUsBitMapTmp = true;
@@ -356,7 +357,7 @@ namespace DuckPaint
             if (VflagMode)
             {
                
-                Vfigure = VfigureFactory.Creator(e.Location, Vsize, Vcolor);
+                Vfigure = VfigureFactory.Creator(e.Location,Vcolor, Vsize );
                 Vcanvas.Add(Vfigure);
             }
             else
@@ -431,6 +432,11 @@ namespace DuckPaint
                     pictureBoxVector.Image = Vbitmap;
                 }
             }
+        }
+
+        private void pictureBoxVector_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DuckPaint
 {
     [Serializable]
-    public abstract class VectorLine : VectorFigure
+    public  class VectorLine : VectorFigure
     {
        
         public VectorLine(Point p, Color c, int s)

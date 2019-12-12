@@ -55,6 +55,8 @@
             this.Raster = new System.Windows.Forms.Panel();
             this.button_Raster = new System.Windows.Forms.Button();
             this.Vector = new System.Windows.Forms.Panel();
+            this.button_Change = new System.Windows.Forms.Button();
+            this.button_Draw = new System.Windows.Forms.Button();
             this.trackBarVector = new System.Windows.Forms.TrackBar();
             this.RedVector = new System.Windows.Forms.Button();
             this.ClearVector = new System.Windows.Forms.Button();
@@ -67,8 +69,6 @@
             this.VioletVector = new System.Windows.Forms.Button();
             this.BlackVector = new System.Windows.Forms.Button();
             this.button_Vector = new System.Windows.Forms.Button();
-            this.button_Draw = new System.Windows.Forms.Button();
-            this.button_Change = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
@@ -385,6 +385,26 @@
             this.Vector.TabIndex = 34;
             this.Vector.Visible = false;
             // 
+            // button_Change
+            // 
+            this.button_Change.Location = new System.Drawing.Point(249, 34);
+            this.button_Change.Name = "button_Change";
+            this.button_Change.Size = new System.Drawing.Size(83, 27);
+            this.button_Change.TabIndex = 32;
+            this.button_Change.Text = "Change";
+            this.button_Change.UseVisualStyleBackColor = true;
+            this.button_Change.Click += new System.EventHandler(this.button_Change_Click);
+            // 
+            // button_Draw
+            // 
+            this.button_Draw.Location = new System.Drawing.Point(249, 4);
+            this.button_Draw.Name = "button_Draw";
+            this.button_Draw.Size = new System.Drawing.Size(83, 27);
+            this.button_Draw.TabIndex = 31;
+            this.button_Draw.Text = "Draw";
+            this.button_Draw.UseVisualStyleBackColor = true;
+            this.button_Draw.Click += new System.EventHandler(this.button_Draw_Click);
+            // 
             // trackBarVector
             // 
             this.trackBarVector.Location = new System.Drawing.Point(10, 11);
@@ -421,6 +441,7 @@
             this.pictureBoxVector.Size = new System.Drawing.Size(803, 380);
             this.pictureBoxVector.TabIndex = 0;
             this.pictureBoxVector.TabStop = false;
+            this.pictureBoxVector.Click += new System.EventHandler(this.pictureBoxVector_Click);
             this.pictureBoxVector.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseDown);
             this.pictureBoxVector.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseMove);
             this.pictureBoxVector.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseUp);
@@ -498,26 +519,6 @@
             this.button_Vector.Text = "Vector";
             this.button_Vector.UseVisualStyleBackColor = true;
             this.button_Vector.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button_Draw
-            // 
-            this.button_Draw.Location = new System.Drawing.Point(249, 4);
-            this.button_Draw.Name = "button_Draw";
-            this.button_Draw.Size = new System.Drawing.Size(83, 27);
-            this.button_Draw.TabIndex = 31;
-            this.button_Draw.Text = "Draw";
-            this.button_Draw.UseVisualStyleBackColor = true;
-            this.button_Draw.Click += new System.EventHandler(this.button_Draw_Click);
-            // 
-            // button_Change
-            // 
-            this.button_Change.Location = new System.Drawing.Point(249, 34);
-            this.button_Change.Name = "button_Change";
-            this.button_Change.Size = new System.Drawing.Size(83, 27);
-            this.button_Change.TabIndex = 32;
-            this.button_Change.Text = "Change";
-            this.button_Change.UseVisualStyleBackColor = true;
-            this.button_Change.Click += new System.EventHandler(this.button_Change_Click);
             // 
             // Form1
             // 

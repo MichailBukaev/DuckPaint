@@ -90,6 +90,8 @@
     <Compile Include="Vector\Painter.cs" />
     <Compile Include="Vector\VectorFigure.cs" />
     <Compile Include="Vector\VectorFigureFactory.cs" />
+    <Compile Include="Vector\VectorLine.cs" />
+    <Compile Include="Vector\VectorLineFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

@@ -9,6 +9,6 @@ namespace DuckPaint
 {
     public interface VectorFigureFactory
     {
-        VectorFigure Creator(Point point, int size, Color color);
+        VectorFigure Creator(Point point, Color color, int size);
     }
 }
