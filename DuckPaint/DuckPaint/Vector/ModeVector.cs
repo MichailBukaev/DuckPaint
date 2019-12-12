@@ -11,34 +11,40 @@ namespace DuckPaint
     {
         public static VectorFigure MovePoint(VectorFigure vectorFigure, int indexPoint, Point currentPoint)
         {
-            vectorFigure.Points[indexPoint] = currentPoint;
+            if (vectorFigure is VectorCircle)
+            {
+                vectorFigure.MouseMoveTillCreation(currentPoint);
+            }
+            else
+            {
+                vectorFigure.Points[indexPoint] = currentPoint;
+            }
             return vectorFigure;
         }
         public static VectorFigure MoveFigure(VectorFigure vectorFigure, int indexPoint, Point currentPoint)
         {
             int removelX = currentPoint.X - vectorFigure.Points[indexPoint].X;
             int removelY = currentPoint.Y - vectorFigure.Points[indexPoint].Y;
-
-            for (int i = 0; i<vectorFigure.Points.Count; i++)
+           
+            
+            for (int i = 0; i < vectorFigure.Points.Count; i++)
             {
                 Point tmp = vectorFigure.Points[i];
                 tmp.Offset(removelX, removelY);
                 vectorFigure.Points[i] = tmp;
             }
-            return vectorFigure;
+            if (vectorFigure is VectorCircle)
+            {
+                VectorCircle vectorCircle = (VectorCircle)vectorFigure;
+                Point tmp = vectorCircle.Centre;
+                tmp.Offset(removelX, removelY);
+                vectorCircle.Centre = tmp;
+            }
+
+                return vectorFigure;
         }
 
-        /*public static VectorFigure MovePoint(VectorFigure vectorFigure, int indexPoint, Point currentPoint, bool flag)
-        {
-            int r = 
-            for(int i=0; i< vectorFigure.Points.Count; i++)
-            {
-                vectorFigure.Points[i] = 
-
-            }
-            vectorFigure.Points[indexPoint] = currentPoint;
-            return vectorFigure;
-        }*/
+       
         
     }
 }

@@ -339,18 +339,7 @@ namespace DuckPaint
         }
         #endregion
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            Raster.Visible = false;
-            Vector.Visible = true;
-        }
-
-        private void button_Raster_Click(object sender, EventArgs e)
-        {
-            Raster.Visible = true;
-            Vector.Visible = false;
-
-        }
+       
 
         private void button_Draw_Click(object sender, EventArgs e)
         {
@@ -587,6 +576,29 @@ namespace DuckPaint
                 }
             }
             
+        }
+        
+       
+       
+
+        private void VectorRectengl_Click(object sender, EventArgs e)
+        {
+            //VfigureFactory = new VectorRectenglFactory();
+        }
+
+        private void button_VectorLine_Click_1(object sender, EventArgs e)
+        {
+            VfigureFactory = new VectorCircleFactory();
+        }
+
+        private void button_VectorCircle_Click(object sender, EventArgs e)
+        {
+            VfigureFactory = new VectorLineFactory();
+        }
+
+        private void button_VectorTriangle_Click(object sender, EventArgs e)
+        {
+            //VfigureFactory = new VectorTriangleFactory();
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)

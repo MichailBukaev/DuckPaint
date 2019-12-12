@@ -12,7 +12,7 @@ namespace DuckPaint
         private Point centre;
         private Point radiusPoint;
 
-        public Point Centre { get { return centre; } }
+        public Point Centre { get { return centre; } set { centre = value; } }
         public Point RadiusPoint { get { return radiusPoint; } }
 
         public VectorCircle(Point p, Color c, int s)
@@ -49,12 +49,6 @@ namespace DuckPaint
 
 
             Point tmp = new Point(centre.X, centre.Y + radius);
-            //firstQ.Add(tmp);
-            //secondQ.Add(tmp);
-
-            //tmp = new Point(centre.X, centre.Y - radius);
-            //thirdQ.Add(tmp);
-            //fourthQ.Add(tmp);
 
             for (int i = 0; i <= radius; i++)
             {

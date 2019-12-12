@@ -89,6 +89,7 @@
     <Compile Include="Vector\ModeVector.cs" />
     <Compile Include="Vector\Painter.cs" />
     <Compile Include="Vector\VectorCircle.cs" />
+    <Compile Include="Vector\VectorCircleFactory.cs" />
     <Compile Include="Vector\VectorFigure.cs" />
     <Compile Include="Vector\VectorFigureFactory.cs" />
     <Compile Include="Vector\VectorLine.cs" />
