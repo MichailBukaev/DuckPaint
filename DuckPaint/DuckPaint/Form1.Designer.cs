@@ -69,6 +69,7 @@
             this.VioletVector = new System.Windows.Forms.Button();
             this.BlackVector = new System.Windows.Forms.Button();
             this.button_Vector = new System.Windows.Forms.Button();
+            this.Circle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
@@ -366,6 +367,7 @@
             // 
             // Vector
             // 
+            this.Vector.Controls.Add(this.Circle);
             this.Vector.Controls.Add(this.button_Change);
             this.Vector.Controls.Add(this.button_Draw);
             this.Vector.Controls.Add(this.trackBarVector);
@@ -443,7 +445,6 @@
             this.pictureBoxVector.Size = new System.Drawing.Size(803, 380);
             this.pictureBoxVector.TabIndex = 0;
             this.pictureBoxVector.TabStop = false;
-          
             this.pictureBoxVector.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseDown);
             this.pictureBoxVector.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseMove);
             this.pictureBoxVector.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseUp);
@@ -528,6 +529,15 @@
             this.button_Vector.UseVisualStyleBackColor = true;
             this.button_Vector.Click += new System.EventHandler(this.button5_Click);
             // 
+            // Circle
+            // 
+            this.Circle.Location = new System.Drawing.Point(339, 4);
+            this.Circle.Name = "Circle";
+            this.Circle.Size = new System.Drawing.Size(71, 56);
+            this.Circle.TabIndex = 33;
+            this.Circle.Text = "Circle";
+            this.Circle.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -600,6 +610,7 @@
         private System.Windows.Forms.Button button_Vector;
         private System.Windows.Forms.Button button_Change;
         private System.Windows.Forms.Button button_Draw;
+        private System.Windows.Forms.Button Circle;
     }
 }
 

@@ -24,10 +24,10 @@ namespace DuckPaint
         }
 
        
-        public int Size { get; set; }
+        public int Size { get { return size; } set { size = value; } }
 
-        public Color Color { get; set; }
-        
+        public Color Color { get { return color; } set {color = value; } }
+
 
         public abstract void MouseMoveTillCreation(Point p);
 

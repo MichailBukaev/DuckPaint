@@ -574,13 +574,13 @@ namespace DuckPaint
         {
             if(VflagMode)
             {
-                Vsize = trackBarSizBrush.Value;
+                Vsize = trackBarVector.Value;
             }
             else
             {
                 if(Vfigure != null)
                 {
-                    Vsize = trackBarSizBrush.Value;
+                    Vfigure.Size = trackBarVector.Value;
                     Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
