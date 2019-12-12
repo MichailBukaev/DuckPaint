@@ -82,7 +82,6 @@ C:\Users\Суперноут\Desktop\предп.рисовалка\DuckPaint\Duck
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe.config
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.exe
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\bin\Debug\DuckPaint.pdb
-C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csprojAssemblyReference.cache
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Form1.resources
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.Properties.Resources.resources
 C:\Users\Суперноут\Desktop\рисолвалочка\DuckPaint\DuckPaint\DuckPaint\obj\Debug\DuckPaint.csproj.GenerateResource.cache

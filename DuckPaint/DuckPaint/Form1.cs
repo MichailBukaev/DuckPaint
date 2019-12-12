@@ -12,6 +12,7 @@ namespace DuckPaint
 {
     public partial class Form1 : Form
     {
+        #region Rastr
         Bitmap bitMap, bitmap_copy;
         Bitmap bitMapTmp;
         FigureFactory figureFactory;
@@ -19,23 +20,27 @@ namespace DuckPaint
         Brush brush;
         Fill fill;
         FigureOption angl;
+        #endregion
 
+        #region Vector
         Bitmap Vbitmap;
         Canvas Vcanvas;
         VectorFigure Vfigure;
         VectorFigureFactory VfigureFactory;
         Point VpointForChange;
         int indexPoint;
+        #endregion
 
 
-
-
+        #region Flags Rastr
         bool flagDownMouse = false;
         string flagMethWorkMouse = " ";
         string flagTypeOfDraw = "borders";
         bool flagUsBitMapTmp = false;
         bool flagRewrieStartPoint = false;
         bool flagPolygonNum = false;
+        #endregion
+
 
         bool VflagMode = true;
         bool VflagDownMouse = false;
@@ -119,23 +124,7 @@ namespace DuckPaint
             }
         }
 
-        private void Ellipse_Click(object sender, EventArgs e)
-        {
-            figureFactory = new EllipseFactory();
-            figure = figureFactory.Create(flagTypeOfDraw);
-            flagMethWorkMouse = "MouseMove";
-            flagRewrieStartPoint = false;
-            OnlyBordres.Enabled = true;
-            FillAndBorders.Enabled = true;
-        }
-
-        private void button_Fill_Click(object sender, EventArgs e)
-        {
-            flagMethWorkMouse = "MouseClick";
-            OnlyBordres.Enabled = false;
-            FillAndBorders.Enabled = false;
-        }
-
+       
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
             if (flagMethWorkMouse == "MouseClick")
@@ -170,6 +159,7 @@ namespace DuckPaint
             }
         }
 
+        #region Color rastr
         private void Blue_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -266,6 +256,26 @@ namespace DuckPaint
             }
         }
 
+        #endregion
+
+        #region Button Rastr
+        private void Ellipse_Click(object sender, EventArgs e)
+        {
+            figureFactory = new EllipseFactory();
+            figure = figureFactory.Create(flagTypeOfDraw);
+            flagMethWorkMouse = "MouseMove";
+            flagRewrieStartPoint = false;
+            OnlyBordres.Enabled = true;
+            FillAndBorders.Enabled = true;
+        }
+
+        private void button_Fill_Click(object sender, EventArgs e)
+        {
+            flagMethWorkMouse = "MouseClick";
+            OnlyBordres.Enabled = false;
+            FillAndBorders.Enabled = false;
+        }
+
         private void OnlyBordres_Click(object sender, EventArgs e)
         {
             flagTypeOfDraw = "borders";
@@ -327,6 +337,7 @@ namespace DuckPaint
             this.bitMap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.Image = bitMap;
         }
+        #endregion
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -434,17 +445,154 @@ namespace DuckPaint
             }
         }
 
-        private void pictureBoxVector_Click(object sender, EventArgs e)
+        private void AquaVector_Click(object sender, EventArgs e)
         {
+            if (VflagMode)
+            {
+                Vcolor = Color.Aqua;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Aqua;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    pictureBoxVector.Image = Vcanvas.UpDateAll(Vbitmap);
+                }
+            }
+        }
 
+        private void OrangeVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Orange;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Orange;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void BlueVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Blue;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Blue;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void YellowVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Yellow;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Yellow;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void VioletVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Violet;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Violet;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void GreenVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Green;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Green;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void RedVector_Click(object sender, EventArgs e)
+        {
+            if (VflagMode)
+            {
+                Vcolor = Color.Red;
+            }
+            else
+            {
+                if (Vfigure != null)
+                {
+                    Vfigure.Color = Color.Red;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+        }
+
+        private void trackBarVector_ValueChanged(object sender, EventArgs e)
+        {
+            if(VflagMode)
+            {
+                Vsize = trackBarSizBrush.Value;
+            }
+            else
+            {
+                if(Vfigure != null)
+                {
+                    Vsize = trackBarSizBrush.Value;
+                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+                    pictureBoxVector.Image = Vbitmap;
+                }
+            }
+            
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
         { 
             angl.Angl = (int)NumericForPolygon.Value;
         }
-
-       
 
         private void PolygonByPoint_Click(object sender, EventArgs e)
         {

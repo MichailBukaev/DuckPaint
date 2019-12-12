@@ -27,5 +27,18 @@ namespace DuckPaint
             }
             return vectorFigure;
         }
+
+        /*public static VectorFigure MovePoint(VectorFigure vectorFigure, int indexPoint, Point currentPoint, bool flag)
+        {
+            int r = 
+            for(int i=0; i< vectorFigure.Points.Count; i++)
+            {
+                vectorFigure.Points[i] = 
+
+            }
+            vectorFigure.Points[indexPoint] = currentPoint;
+            return vectorFigure;
+        }*/
+        
     }
 }

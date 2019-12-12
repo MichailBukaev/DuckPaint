@@ -407,13 +407,14 @@
             // 
             // trackBarVector
             // 
-            this.trackBarVector.Location = new System.Drawing.Point(10, 11);
+            this.trackBarVector.Location = new System.Drawing.Point(10, 10);
             this.trackBarVector.Maximum = 5;
             this.trackBarVector.Minimum = 1;
             this.trackBarVector.Name = "trackBarVector";
             this.trackBarVector.Size = new System.Drawing.Size(104, 45);
             this.trackBarVector.TabIndex = 1;
             this.trackBarVector.Value = 1;
+            this.trackBarVector.ValueChanged += new System.EventHandler(this.trackBarVector_ValueChanged);
             // 
             // RedVector
             // 
@@ -423,6 +424,7 @@
             this.RedVector.Size = new System.Drawing.Size(25, 26);
             this.RedVector.TabIndex = 11;
             this.RedVector.UseVisualStyleBackColor = false;
+            this.RedVector.Click += new System.EventHandler(this.RedVector_Click);
             // 
             // ClearVector
             // 
@@ -441,7 +443,7 @@
             this.pictureBoxVector.Size = new System.Drawing.Size(803, 380);
             this.pictureBoxVector.TabIndex = 0;
             this.pictureBoxVector.TabStop = false;
-            this.pictureBoxVector.Click += new System.EventHandler(this.pictureBoxVector_Click);
+          
             this.pictureBoxVector.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseDown);
             this.pictureBoxVector.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseMove);
             this.pictureBoxVector.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxVector_MouseUp);
@@ -454,6 +456,7 @@
             this.OrangeVector.Size = new System.Drawing.Size(25, 26);
             this.OrangeVector.TabIndex = 12;
             this.OrangeVector.UseVisualStyleBackColor = false;
+            this.OrangeVector.Click += new System.EventHandler(this.OrangeVector_Click);
             // 
             // YellowVector
             // 
@@ -463,6 +466,7 @@
             this.YellowVector.Size = new System.Drawing.Size(25, 26);
             this.YellowVector.TabIndex = 13;
             this.YellowVector.UseVisualStyleBackColor = false;
+            this.YellowVector.Click += new System.EventHandler(this.YellowVector_Click);
             // 
             // GreenVector
             // 
@@ -472,6 +476,7 @@
             this.GreenVector.Size = new System.Drawing.Size(25, 26);
             this.GreenVector.TabIndex = 14;
             this.GreenVector.UseVisualStyleBackColor = false;
+            this.GreenVector.Click += new System.EventHandler(this.GreenVector_Click);
             // 
             // AquaVector
             // 
@@ -481,6 +486,7 @@
             this.AquaVector.Size = new System.Drawing.Size(25, 26);
             this.AquaVector.TabIndex = 15;
             this.AquaVector.UseVisualStyleBackColor = false;
+            this.AquaVector.Click += new System.EventHandler(this.AquaVector_Click);
             // 
             // BlueVector
             // 
@@ -490,6 +496,7 @@
             this.BlueVector.Size = new System.Drawing.Size(25, 26);
             this.BlueVector.TabIndex = 16;
             this.BlueVector.UseVisualStyleBackColor = false;
+            this.BlueVector.Click += new System.EventHandler(this.BlueVector_Click);
             // 
             // VioletVector
             // 
@@ -499,6 +506,7 @@
             this.VioletVector.Size = new System.Drawing.Size(25, 26);
             this.VioletVector.TabIndex = 17;
             this.VioletVector.UseVisualStyleBackColor = false;
+            this.VioletVector.Click += new System.EventHandler(this.VioletVector_Click);
             // 
             // BlackVector
             // 
