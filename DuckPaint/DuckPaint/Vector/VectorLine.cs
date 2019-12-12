@@ -15,6 +15,8 @@ namespace DuckPaint
             this.points = new List<Point>();
             this.Color = c;
             this.size = s;
+            this.points.Add(p);
+            this.points.Add(p);
         }
         public override void MouseMoveTillCreation(Point p)
         {

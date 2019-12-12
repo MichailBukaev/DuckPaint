@@ -1438,6 +1438,15 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "DuckPaint/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/DuckPaint.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DuckPaint.dll": {}
+        }
       }
     }
   },
@@ -5250,30 +5259,41 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "DuckPaint/1.0.0": {
+      "type": "project",
+      "path": "../DuckPaint/DuckPaint.csproj",
+      "msbuildProject": "../DuckPaint/DuckPaint.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.0": [
+      "DuckPaint >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.2.0",
       "NUnit3TestAdapter >= 3.13.0",
       "nunit >= 3.12.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Суперноут\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Суперноут\\Desktop\\рисолвалочка\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
       "projectName": "DuckTest",
-      "projectPath": "C:\\Users\\Суперноут\\Desktop\\рисолвалочка\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
-      "packagesPath": "C:\\Users\\Суперноут\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Суперноут\\Desktop\\рисолвалочка\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Суперноут\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -5284,7 +5304,11 @@
       },
       "frameworks": {
         "netcoreapp3.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
+              "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

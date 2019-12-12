@@ -74,7 +74,7 @@ namespace DuckPaint
             pictureBox1.Image = bitMap;
             angl = FigureOption.SetAngles();
             Vcanvas = Canvas.CreateCanvas();
-            //VfigureFactory = new VectorLineFactory();
+            VfigureFactory = new VectorLineFactory();
         }
 
         private void pictureBox1_MouseUp_1(object sender, MouseEventArgs e)
