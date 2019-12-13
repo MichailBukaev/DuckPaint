@@ -67,25 +67,26 @@
             this.button_VectorLine = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button_VectorTriangle = new System.Windows.Forms.Button();
-            this.button_VectorRectengl = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.buttonClear = new System.Windows.Forms.Button();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.VectorClear = new System.Windows.Forms.Button();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button_VectorRectengl = new System.Windows.Forms.Button();
+            this.button_VectorTriangle = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
@@ -93,15 +94,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVector)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            this.groupBox7.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -532,87 +533,6 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Raster";
             // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage2.Controls.Add(this.groupBox8);
-            this.tabPage2.Controls.Add(this.groupBox7);
-            this.tabPage2.Controls.Add(this.groupBox6);
-            this.tabPage2.Controls.Add(this.pictureBoxVector);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(771, 564);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Vector";
-            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
-            // 
-            // button_VectorTriangle
-            // 
-            this.button_VectorTriangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_VectorTriangle.Image = ((System.Drawing.Image)(resources.GetObject("button_VectorTriangle.Image")));
-            this.button_VectorTriangle.Location = new System.Drawing.Point(6, 45);
-            this.button_VectorTriangle.Name = "button_VectorTriangle";
-            this.button_VectorTriangle.Size = new System.Drawing.Size(20, 20);
-            this.button_VectorTriangle.TabIndex = 36;
-            this.button_VectorTriangle.UseVisualStyleBackColor = true;
-            this.button_VectorTriangle.Click += new System.EventHandler(this.button_VectorTriangle_Click);
-            // 
-            // button_VectorRectengl
-            // 
-            this.button_VectorRectengl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_VectorRectengl.Image = ((System.Drawing.Image)(resources.GetObject("button_VectorRectengl.Image")));
-            this.button_VectorRectengl.Location = new System.Drawing.Point(32, 19);
-            this.button_VectorRectengl.Name = "button_VectorRectengl";
-            this.button_VectorRectengl.Size = new System.Drawing.Size(20, 20);
-            this.button_VectorRectengl.TabIndex = 35;
-            this.button_VectorRectengl.UseVisualStyleBackColor = true;
-            this.button_VectorRectengl.Click += new System.EventHandler(this.button_VectorRectengl_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.trackBarSizBrush);
-            this.groupBox2.Location = new System.Drawing.Point(8, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(91, 87);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Sizing";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.Black);
-            this.groupBox3.Controls.Add(this.Blue);
-            this.groupBox3.Controls.Add(this.Red);
-            this.groupBox3.Controls.Add(this.Violet);
-            this.groupBox3.Controls.Add(this.Green);
-            this.groupBox3.Controls.Add(this.Aqua);
-            this.groupBox3.Controls.Add(this.Orange);
-            this.groupBox3.Controls.Add(this.Yellow);
-            this.groupBox3.Location = new System.Drawing.Point(8, 99);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(91, 151);
-            this.groupBox3.TabIndex = 31;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Color Palette";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.Line);
-            this.groupBox4.Controls.Add(this.Ellipse);
-            this.groupBox4.Controls.Add(this.eTriangle);
-            this.groupBox4.Controls.Add(this.rTriangle);
-            this.groupBox4.Controls.Add(this.Rectangle);
-            this.groupBox4.Controls.Add(this.PolygonByPoint);
-            this.groupBox4.Controls.Add(this.NumericForPolygon);
-            this.groupBox4.Controls.Add(this.Polygon);
-            this.groupBox4.Location = new System.Drawing.Point(8, 256);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(91, 106);
-            this.groupBox4.TabIndex = 32;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Objects";
-            // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.buttonClear);
@@ -636,6 +556,133 @@
             this.buttonClear.UseVisualStyleBackColor = true;
             this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.Line);
+            this.groupBox4.Controls.Add(this.Ellipse);
+            this.groupBox4.Controls.Add(this.eTriangle);
+            this.groupBox4.Controls.Add(this.rTriangle);
+            this.groupBox4.Controls.Add(this.Rectangle);
+            this.groupBox4.Controls.Add(this.PolygonByPoint);
+            this.groupBox4.Controls.Add(this.NumericForPolygon);
+            this.groupBox4.Controls.Add(this.Polygon);
+            this.groupBox4.Location = new System.Drawing.Point(8, 256);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(91, 106);
+            this.groupBox4.TabIndex = 32;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Objects";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Black);
+            this.groupBox3.Controls.Add(this.Blue);
+            this.groupBox3.Controls.Add(this.Red);
+            this.groupBox3.Controls.Add(this.Violet);
+            this.groupBox3.Controls.Add(this.Green);
+            this.groupBox3.Controls.Add(this.Aqua);
+            this.groupBox3.Controls.Add(this.Orange);
+            this.groupBox3.Controls.Add(this.Yellow);
+            this.groupBox3.Location = new System.Drawing.Point(8, 99);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(91, 151);
+            this.groupBox3.TabIndex = 31;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Color Palette";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.trackBarSizBrush);
+            this.groupBox2.Location = new System.Drawing.Point(8, 6);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(91, 87);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Sizing";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage2.Controls.Add(this.groupBox8);
+            this.tabPage2.Controls.Add(this.groupBox7);
+            this.tabPage2.Controls.Add(this.groupBox6);
+            this.tabPage2.Controls.Add(this.pictureBoxVector);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(771, 564);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Vector";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.VectorClear);
+            this.groupBox8.Controls.Add(this.groupBox9);
+            this.groupBox8.Controls.Add(this.button_Draw);
+            this.groupBox8.Controls.Add(this.button_Change);
+            this.groupBox8.Location = new System.Drawing.Point(6, 239);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(90, 220);
+            this.groupBox8.TabIndex = 39;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Painting";
+            // 
+            // VectorClear
+            // 
+            this.VectorClear.Location = new System.Drawing.Point(6, 86);
+            this.VectorClear.Name = "VectorClear";
+            this.VectorClear.Size = new System.Drawing.Size(72, 25);
+            this.VectorClear.TabIndex = 40;
+            this.VectorClear.Text = "CLEAR";
+            this.VectorClear.UseVisualStyleBackColor = true;
+            this.VectorClear.Click += new System.EventHandler(this.VectorClear_Click);
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.button_VectorCircle);
+            this.groupBox9.Controls.Add(this.button_VectorRectengl);
+            this.groupBox9.Controls.Add(this.button_VectorTriangle);
+            this.groupBox9.Controls.Add(this.button_VectorLine);
+            this.groupBox9.Location = new System.Drawing.Point(6, 117);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(72, 86);
+            this.groupBox9.TabIndex = 0;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Objects";
+            // 
+            // button_VectorRectengl
+            // 
+            this.button_VectorRectengl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_VectorRectengl.Image = ((System.Drawing.Image)(resources.GetObject("button_VectorRectengl.Image")));
+            this.button_VectorRectengl.Location = new System.Drawing.Point(32, 19);
+            this.button_VectorRectengl.Name = "button_VectorRectengl";
+            this.button_VectorRectengl.Size = new System.Drawing.Size(20, 20);
+            this.button_VectorRectengl.TabIndex = 35;
+            this.button_VectorRectengl.UseVisualStyleBackColor = true;
+            this.button_VectorRectengl.Click += new System.EventHandler(this.button_VectorRectengl_Click);
+            // 
+            // button_VectorTriangle
+            // 
+            this.button_VectorTriangle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_VectorTriangle.Image = ((System.Drawing.Image)(resources.GetObject("button_VectorTriangle.Image")));
+            this.button_VectorTriangle.Location = new System.Drawing.Point(6, 45);
+            this.button_VectorTriangle.Name = "button_VectorTriangle";
+            this.button_VectorTriangle.Size = new System.Drawing.Size(20, 20);
+            this.button_VectorTriangle.TabIndex = 36;
+            this.button_VectorTriangle.UseVisualStyleBackColor = true;
+            this.button_VectorTriangle.Click += new System.EventHandler(this.button_VectorTriangle_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.trackBarVector);
+            this.groupBox7.Location = new System.Drawing.Point(6, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(92, 69);
+            this.groupBox7.TabIndex = 38;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Sizing";
+            // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.BlackVector);
@@ -653,52 +700,6 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Color Palette";
             // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.trackBarVector);
-            this.groupBox7.Location = new System.Drawing.Point(6, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(92, 69);
-            this.groupBox7.TabIndex = 38;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Sizing";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.VectorClear);
-            this.groupBox8.Controls.Add(this.groupBox9);
-            this.groupBox8.Controls.Add(this.button_Draw);
-            this.groupBox8.Controls.Add(this.button_Change);
-            this.groupBox8.Location = new System.Drawing.Point(6, 239);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(90, 220);
-            this.groupBox8.TabIndex = 39;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Painting";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.button_VectorCircle);
-            this.groupBox9.Controls.Add(this.button_VectorRectengl);
-            this.groupBox9.Controls.Add(this.button_VectorTriangle);
-            this.groupBox9.Controls.Add(this.button_VectorLine);
-            this.groupBox9.Location = new System.Drawing.Point(6, 117);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(72, 86);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Objects";
-            // 
-            // VectorClear
-            // 
-            this.VectorClear.Location = new System.Drawing.Point(6, 86);
-            this.VectorClear.Name = "VectorClear";
-            this.VectorClear.Size = new System.Drawing.Size(72, 25);
-            this.VectorClear.TabIndex = 40;
-            this.VectorClear.Text = "CLEAR";
-            this.VectorClear.UseVisualStyleBackColor = true;
-            this.VectorClear.Click += new System.EventHandler(this.VectorClear_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -706,7 +707,8 @@
             this.toolStripButton2,
             this.toolStripButton3,
             this.toolStripButton4,
-            this.toolStripButton5});
+            this.toolStripButton5,
+            this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(787, 25);
@@ -730,7 +732,6 @@
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton2.Text = "toolStripButton2";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton3
             // 
@@ -759,6 +760,15 @@
             this.toolStripButton5.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton5.Text = "toolStripButton5";
             // 
+            // toolStripButton6
+            // 
+            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
+            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton6.Name = "toolStripButton6";
+            this.toolStripButton6.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton6.Text = "toolStripButton6";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -778,17 +788,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxVector)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -855,6 +865,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
+        private System.Windows.Forms.ToolStripButton toolStripButton6;
     }
 }
 

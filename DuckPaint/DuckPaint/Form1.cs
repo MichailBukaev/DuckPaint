@@ -578,14 +578,7 @@ namespace DuckPaint
             }
             
         }
-        
        
-       
-
-        private void VectorRectengl_Click(object sender, EventArgs e)
-        {
-            //VfigureFactory = new VectorRectenglFactory();
-        }
 
         private void button_VectorLine_Click_1(object sender, EventArgs e)
         {
@@ -601,6 +594,10 @@ namespace DuckPaint
         {
             //VfigureFactory = new VectorTriangleFactory();
         }
+        private void button_VectorRectengl_Click(object sender, EventArgs e)
+        {
+            //VfigureFactory = new VectorRectenglFactory();
+        }
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
@@ -615,16 +612,7 @@ namespace DuckPaint
             pictureBoxVector.Image = Vbitmap;
         }
 
-        private void button_VectorRectengl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
         { 
             angl.Angl = (int)NumericForPolygon.Value;
