@@ -332,14 +332,15 @@ namespace DuckPaint
             FillAndBorders.Enabled = true;
         }
 
-        private void Clear_Click(object sender, EventArgs e)
+        private void buttonClear_Click(object sender, EventArgs e)
         {
             this.bitMap = new Bitmap(pictureBox1.Width, pictureBox1.Height);
             pictureBox1.Image = bitMap;
         }
+
         #endregion
 
-       
+
 
         private void button_Draw_Click(object sender, EventArgs e)
         {
@@ -599,6 +600,29 @@ namespace DuckPaint
         private void button_VectorTriangle_Click(object sender, EventArgs e)
         {
             //VfigureFactory = new VectorTriangleFactory();
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VectorClear_Click(object sender, EventArgs e)
+        {
+            Vcanvas.Clear();
+            Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+            Vbitmap = Vcanvas.UpDateAll(Vbitmap);
+            pictureBoxVector.Image = Vbitmap;
+        }
+
+        private void button_VectorRectengl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)

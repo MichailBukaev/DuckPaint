@@ -65,6 +65,12 @@ namespace DuckPaint
               return null;
         }
 
+        public void Clear()
+        {
+            figures = new List<VectorFigure>();
+
+        }
+
     }
 
 }
