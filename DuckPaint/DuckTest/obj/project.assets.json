@@ -5275,25 +5275,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
       "projectName": "DuckTest",
-      "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -5305,8 +5300,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
-              "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
+            "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
+              "projectPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
             }
           }
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace DuckPaint
 {
@@ -385,6 +386,7 @@ namespace DuckPaint
                 if (VflagMode)
                 {
                     Vfigure.MouseMoveTillCreation(e.Location);
+                    
                     Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
@@ -396,6 +398,7 @@ namespace DuckPaint
                         if (Control.ModifierKeys == Keys.Shift)
                         {
                             Vfigure = ModeVector.MoveFigure(Vfigure, indexPoint, e.Location);
+                            
                             Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                             Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                             pictureBoxVector.Image = Vbitmap;
@@ -403,6 +406,7 @@ namespace DuckPaint
                         else
                         {
                             Vfigure = ModeVector.MovePoint(Vfigure, indexPoint, e.Location);
+                            
                             Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                             Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                             pictureBoxVector.Image = Vbitmap;
@@ -428,7 +432,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Black;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -446,7 +451,9 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Aqua;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vcanvas.UpDateAll(Vbitmap);
                 }
             }
@@ -463,7 +470,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Orange;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -481,7 +489,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Blue;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -499,7 +508,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Yellow;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -517,7 +527,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Violet;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -535,7 +546,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Green;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -553,7 +565,8 @@ namespace DuckPaint
                 if (Vfigure != null)
                 {
                     Vfigure.Color = Color.Red;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -571,7 +584,8 @@ namespace DuckPaint
                 if(Vfigure != null)
                 {
                     Vfigure.Size = trackBarVector.Value;
-                    Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+                    
+                        Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
                     Vbitmap = Vcanvas.UpDateAll(Vbitmap);
                     pictureBoxVector.Image = Vbitmap;
                 }
@@ -612,7 +626,44 @@ namespace DuckPaint
             pictureBoxVector.Image = Vbitmap;
         }
 
-        
+        private void toolStripButtonSave_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripButtonSaveAs_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                
+                if (tabControl1.SelectedTab == tabPage1)
+                {
+
+                    bitMap.Save(saveFileDialog1.OpenFile(), System.Drawing.Imaging.ImageFormat.Png);
+                }
+                else
+                {
+                    Vbitmap.Save(saveFileDialog1.OpenFile(), System.Drawing.Imaging.ImageFormat.Png);
+                }
+            }
+
+        }
+
+        private void toolStripButtonLoad_Click(object sender, EventArgs e)
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                bitMap= new Bitmap(openFileDialog1.FileName);
+                pictureBox1.Image = bitMap;
+              
+            }
+        }
+
+        private void tabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
         { 
             angl.Angl = (int)NumericForPolygon.Value;
