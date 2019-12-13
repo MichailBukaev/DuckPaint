@@ -592,11 +592,11 @@ namespace DuckPaint
 
         private void button_VectorTriangle_Click(object sender, EventArgs e)
         {
-            //VfigureFactory = new VectorTriangleFactory();
+            VfigureFactory = new VectorTriangleFactory();
         }
         private void button_VectorRectengl_Click(object sender, EventArgs e)
         {
-            //VfigureFactory = new VectorRectenglFactory();
+            VfigureFactory = new VectorRectangleFactory();
         }
 
         private void tabPage2_Click(object sender, EventArgs e)

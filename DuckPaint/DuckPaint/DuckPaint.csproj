@@ -96,6 +96,8 @@
     <Compile Include="Vector\VectorLineFactory.cs" />
     <Compile Include="Vector\VectorRectangle.cs" />
     <Compile Include="Vector\VectorRectangleFactory.cs" />
+    <Compile Include="Vector\VectorTriangle.cs" />
+    <Compile Include="Vector\VectorTriangleFactory.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

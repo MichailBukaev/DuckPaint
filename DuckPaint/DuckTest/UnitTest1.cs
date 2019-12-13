@@ -39,6 +39,25 @@ namespace DuckPaint
             }
             CollectionAssert.AreEqual(pointsResult, vectorCircle.Points);
         }
+
+        [TestCase(0, 0, 20, 0, new int[] { 0, 20, 10 }, new int[] { 0, 0, 10 })]
+        [TestCase(0, 0, -20, -10, new int[] { 0, -20, -10 }, new int[] { 0, 0, -10 })]
         
+        public void TestVectorTriangle(int oneX, int oneY, int twoX, int twoY, int[] arrAllResultX, int[] arrAllResultY)
+        {
+            Point pointOne = new Point(oneX, oneY);
+            Point pointTwo = new Point(twoX, twoY);
+            VectorTriangle vectorTriange = new VectorTriangle(pointOne, Color.Red, 1);
+            vectorTriange.MouseMoveTillCreation(pointTwo);
+            List<Point> pointsResult = new List<Point>();
+
+            for (int i = 0; i < arrAllResultX.Length; i++)
+            {
+                pointsResult.Add(new Point(arrAllResultX[i], arrAllResultY[i]));
+            }
+            CollectionAssert.AreEqual(pointsResult, vectorTriange.Points);
+
+        }
+
     }
 }

@@ -15,8 +15,7 @@ namespace DuckPaint
         {
             Point pointOne = new Point(oneX, oneY);
             Point pointTwo = new Point(twoX,twoY);
-            //Point pointThree = new Point(twoX, twoY);
-            //Point pointFour = new Point(oneX, twoY);
+
 
             VectorRectangle vectorRectangle = new VectorRectangle(pointOne, Color.Red, 1);
             vectorRectangle.MouseMoveTillCreation(pointTwo);
