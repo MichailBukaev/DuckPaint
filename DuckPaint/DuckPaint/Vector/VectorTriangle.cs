@@ -26,7 +26,8 @@ namespace DuckPaint
             points[1] = new Point(p.X, points[0].Y);
 
             int x = (p.X + points[0].X) / 2;
-            int y = (points[0].Y + x);
+            int h = Math.Abs(p.X - points[0].X);
+            int y = points[0].Y-Convert.ToInt32(Math.Sqrt( Math.Pow(h, 2)-Math.Pow(h/2,2)));
             
             points[2] = new Point(x, y);
         }

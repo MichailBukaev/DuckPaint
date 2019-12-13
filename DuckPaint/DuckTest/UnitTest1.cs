@@ -40,8 +40,8 @@ namespace DuckPaint
             CollectionAssert.AreEqual(pointsResult, vectorCircle.Points);
         }
 
-        [TestCase(0, 0, 20, 0, new int[] { 0, 20, 10 }, new int[] { 0, 0, 10 })]
-        [TestCase(0, 0, -20, -10, new int[] { 0, -20, -10 }, new int[] { 0, 0, -10 })]
+        [TestCase(0, 0, 20, 0, new int[] { 0, 20, 10 }, new int[] { 0, 0, -17 })]
+        
         
         public void TestVectorTriangle(int oneX, int oneY, int twoX, int twoY, int[] arrAllResultX, int[] arrAllResultY)
         {
