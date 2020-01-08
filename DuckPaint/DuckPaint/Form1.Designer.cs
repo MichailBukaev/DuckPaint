@@ -89,6 +89,8 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.AVLtextBox = new System.Windows.Forms.TextBox();
+            this.AVL = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBarSizBrush)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericForPolygon)).BeginInit();
@@ -779,11 +781,30 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // AVLtextBox
+            // 
+            this.AVLtextBox.Location = new System.Drawing.Point(152, 2);
+            this.AVLtextBox.Name = "AVLtextBox";
+            this.AVLtextBox.Size = new System.Drawing.Size(155, 20);
+            this.AVLtextBox.TabIndex = 38;
+            // 
+            // AVL
+            // 
+            this.AVL.Location = new System.Drawing.Point(314, 2);
+            this.AVL.Name = "AVL";
+            this.AVL.Size = new System.Drawing.Size(75, 23);
+            this.AVL.TabIndex = 39;
+            this.AVL.Text = "button1";
+            this.AVL.UseVisualStyleBackColor = true;
+            this.AVL.Click += new System.EventHandler(this.AVL_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(787, 622);
+            this.Controls.Add(this.AVL);
+            this.Controls.Add(this.AVLtextBox);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
@@ -878,6 +899,8 @@
         private System.Windows.Forms.ToolStripButton toolStripButton6;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.TextBox AVLtextBox;
+        private System.Windows.Forms.Button AVL;
     }
 }
 

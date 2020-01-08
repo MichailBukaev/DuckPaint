@@ -1,32 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj": {}
+    "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
+    "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj",
         "projectName": "DuckPaint",
-        "projectPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
+        "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj": {
+    "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
         "projectName": "DuckTest",
-        "projectPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
+        "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\DuckTest.csproj",
+        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckTest\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
@@ -38,8 +42,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
-                "projectPath": "C:\\Users\\User\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
+              "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj": {
+                "projectPath": "C:\\Users\\PC\\Documents\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint\\DuckPaint.csproj"
               }
             }
           }
@@ -76,12 +80,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.0.1, 3.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.0.0, 3.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

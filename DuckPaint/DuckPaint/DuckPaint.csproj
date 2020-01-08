@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Vector\AVLTree.cs" />
+    <Compile Include="Vector\AVLTreeNode.cs" />
     <Compile Include="Vector\Canvas.cs" />
     <Compile Include="FigureOption.cs" />
     <Compile Include="Ellipse\BordersEllipse.cs" />
@@ -86,6 +88,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleBrash.cs" />
     <Compile Include="ThereSFill.cs" />
+    <Compile Include="Vector\DiagramAVL.cs" />
     <Compile Include="Vector\ModeVector.cs" />
     <Compile Include="Vector\Painter.cs" />
     <Compile Include="Vector\VectorCircle.cs" />

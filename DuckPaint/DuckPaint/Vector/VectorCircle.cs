@@ -23,6 +23,15 @@ namespace DuckPaint
             this.centre = p;
             this.radiusPoint = p;
         }
+        public VectorCircle(Point p, int radius, Color c, int s)
+        {
+            this.points = new List<Point>();
+            this.color = c;
+            this.size = s;
+            this.centre = p;
+            this.radiusPoint = new Point(p.X, p.Y+radius);
+            MouseMoveTillCreation(RadiusPoint);
+        }
         public override void MouseMoveTillCreation(Point p)
         {
 

@@ -664,6 +664,16 @@ namespace DuckPaint
 
         }
 
+        private void AVL_Click(object sender, EventArgs e)
+        {
+            string str = AVLtextBox.Text;
+            Vbitmap = new Bitmap(pictureBoxVector.Width, pictureBoxVector.Height);
+            DiagramAVL diagram = new DiagramAVL(str);
+            diagram.CreateDiagram(Vbitmap);
+            diagram.DrawDiagram(Vbitmap);
+            pictureBoxVector.Image = Vbitmap;
+        }
+
         private void NumericForPolygon_ValueChanged(object sender, EventArgs e)
         { 
             angl.Angl = (int)NumericForPolygon.Value;
